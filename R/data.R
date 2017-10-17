@@ -10,9 +10,9 @@
 #' @format A data frame of 324 rows and 3 columns
 "monthcan"
 
-#' Monthly record of publicatoin in USA for cc and bd
+#' Monthly record of publicatoin in UK for cc and bd
 #'
-#' Monthly record of publicatoin in USA for cc and bd
+#' Monthly record of publicatoin in UK for cc and bd
 #'
 #' @docType data
 #' @keywords datasets
@@ -47,3 +47,16 @@
 #' @usage data(papers_bd)
 #' @format A list of 20 elements
 "papers_bd"
+
+
+#' Events
+#'
+#' Events
+#'
+#' @docType data
+#' @keywords datasets
+#' @author tobeadded
+#' @name events
+#' @usage data(events)
+#' @format A  data frame of 29 rows and 15 columns
+"events"

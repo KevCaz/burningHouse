@@ -3,13 +3,13 @@
 \docType{data}
 \name{monthgbr}
 \alias{monthgbr}
-\title{Monthly record of publicatoin in USA for cc and bd}
+\title{Monthly record of publicatoin in UK for cc and bd}
 \format{A data frame of 324 rows and 3 columns}
 \usage{
 data(monthgbr)
 }
 \description{
-Monthly record of publicatoin in USA for cc and bd
+Monthly record of publicatoin in UK for cc and bd
 }
 \author{
 tobeadded
