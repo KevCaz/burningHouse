@@ -4,8 +4,7 @@
 \alias{figure1}
 \title{Code that creates figure 1}
 \usage{
-figure1(file = "./inst/ms-figure1.pdf", col1 = "#594023",
-  col2 = "#9eb844")
+figure1(file = "ms-figure1.pdf", col1 = "#594023", col2 = "#9eb844")
 }
 \arguments{
 \item{file}{a character string giving the name of the file (see \linkpdf)}

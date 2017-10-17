@@ -19,7 +19,7 @@
 #' @export
 
 
-figure1 <- function(file = "./inst/ms-figure1.pdf", col1 = "#594023", col2 = "#9eb844") {
+figure1 <- function(file = "ms-figure1.pdf", col1 = "#594023", col2 = "#9eb844") {
     
     ##---
     pts <- events
