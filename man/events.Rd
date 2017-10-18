@@ -3,13 +3,14 @@
 \docType{data}
 \name{events}
 \alias{events}
-\title{Events}
+\title{Major events}
 \format{A  data frame of 29 rows and 15 columns}
 \usage{
 data(events)
 }
 \description{
-Events
+A currantion of important international event/conference related to either
+biodiversity or climate change.
 }
 \author{
 tobeadded

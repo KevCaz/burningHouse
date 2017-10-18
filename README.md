@@ -9,7 +9,7 @@ To be added.
 
 ## Why this repository?
 
-This repository reproduces the figures found in Legagneux *et al.* 2017.
+This repository reproduces the figures found in XXXXXX.
 The form of a standard R package helps sharing the code and this repository
 is a good media to discuss any issue regarding the code implementation.
 

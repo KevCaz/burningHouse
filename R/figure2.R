@@ -1,25 +1,25 @@
-#' @title Code that creates figure 1
+#' @title Code that creates figure 2
 #'
 #' @description Format alien output and return an object of class \code{alienPredict}.
 #'
-#' @param file a character string giving the name of the file (see \linkpdf)
+#' @param file a character string giving the name of the file (see \code{\link[gr]{pdf}}).
 #' @param col1 A specification for the first color.
 #' @param col2 A specification for the second color.
 #'
 #' @return
-#' Cretes a figure  An object of the class \code{alienPredict} is returned .
+#' Creates a figure.
 #'
 #' @author Nicolas Casajus & Kevin Cazelles
 #'
 #' @importFrom graphics axis polygon par axis text lines points mtext
 #'
 #' @examples
-#' figure1()
+#' figure2()
 #'
 #' @export
 
 
-figure1 <- function(file = "ms-figure1.pdf", col1 = "#594023", col2 = "#9eb844") {
+figure2 <- function(file = "ms-figure2.pdf", col1 = "#594023", col2 = "#9eb844") {
     
     ##---
     pts <- events
@@ -33,9 +33,8 @@ figure1 <- function(file = "ms-figure1.pdf", col1 = "#594023", col2 = "#9eb844")
     yrng <- ifelse(ymax > 2000, 200, ifelse(ymax > 900, 100, 50))
     
     
-    grDevices::pdf("./inst/ms-figure1.pdf", width = 8, height = 6)
-    # png(paste0('~/Dropbox/CCvsPB/ms/figs/ms-figure1.png'), width = 8, height = 6,
-    # res = 300, unit = 'in')
+    grDevices::pdf(file, width = 8, height = 6)
+    # grDevices::png(file, width = 8, height = 6, res = 300, unit = 'in')
     par(mar = c(3, 1, 0.5, 3), mgp = c(2.5, 0.75, 0), xaxs = "i", yaxs = "i", family = "serif", 
         new = FALSE, fig = c(0, 1, 0, 1))
     
