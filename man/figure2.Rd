@@ -4,9 +4,18 @@
 \alias{figure2}
 \title{Code that creates figure 2}
 \usage{
-figure2(file = "ms-figure2.pdf", col1 = "#594023", col2 = "#9eb844")
+figure2(pts, monthcan, monthusa, monthgbr, file = "ms-figure2.pdf",
+  col1 = "#594023", col2 = "#9eb844")
 }
 \arguments{
+\item{pts}{a dataframe of events.}
+
+\item{monthcan}{monthly publications -- Canada.}
+
+\item{monthusa}{monthly publications -- USA.}
+
+\item{monthgbr}{monthly publications -- Great Britain.}
+
 \item{file}{a character string giving the name of the file (see \code{\link[gr]{pdf}}).}
 
 \item{col1}{A specification for the first color.}
@@ -17,10 +26,10 @@ figure2(file = "ms-figure2.pdf", col1 = "#594023", col2 = "#9eb844")
 Creates a figure.
 }
 \description{
-Format alien output and return an object of class \code{alienPredict}.
+Code that creates figure 2.
 }
 \examples{
-figure2()
+# figure2(utils::data(events), utils::data(monthcan), utils::data(monthusa), utils::data(monthgbr))
 
 }
 \author{

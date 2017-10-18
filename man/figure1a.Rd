@@ -2,7 +2,7 @@
 % Please edit documentation in R/figure1a.R
 \name{figure1a}
 \alias{figure1a}
-\title{Code that creates figure 2}
+\title{Code that creates figure 1a}
 \usage{
 figure1a(file = "ms-figure1a.pdf", col1 = "#594023", col2 = "#9eb844")
 }
@@ -17,7 +17,7 @@ figure1a(file = "ms-figure1a.pdf", col1 = "#594023", col2 = "#9eb844")
 Creates a figure.
 }
 \description{
-Format alien output and return an object of class \code{alienPredict}.
+Code that creates figure 1a.
 }
 \examples{
 figure1a()

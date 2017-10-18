@@ -10,12 +10,13 @@ Depends:
     R (>= 3.0.0)
 Imports:
     grDevices,
-    graphics
+    graphics,
+    utils
 Suggests:
     knitr,
     rmarkdown,
     testthat
-License: GPL-3
+License: GPL-2
 URL: https://github.com/KevCaz/burningHouse
 BugReports: https://github.com/KevCaz/burningHouse/issues
 VignetteBuilder: knitr

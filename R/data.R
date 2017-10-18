@@ -36,18 +36,6 @@
 "monthusa"
 
 
-#' Papers biodiversity
-#'
-#' Papers biodiversity
-#'
-#' @docType data
-#' @keywords datasets
-#' @author tobeadded
-#' @name papers_bd
-#' @usage data(papers_bd)
-#' @format A list of 20 elements
-"papers_bd"
-
 
 #' Major events
 #'
@@ -63,6 +51,7 @@
 "events"
 
 
+
 #' Exchange rates
 #'
 #' Exchange rates (USD-POUND-CAND) from 1990 to 2016. All values are
@@ -71,35 +60,12 @@
 #' @docType data
 #' @keywords datasets
 #' @author tobeadded
-#' @name devise
-#' @usage data(devise)
+#' @name rateExch
+#' @usage data(rateExch)
 #' @format A data frame of 27 rows and 5 columns
-"events"
+"rateExch"
 
 
-#' Canadian fundings allocated to Biodiversity research.
-#'
-#' Canadian fundings allocated to Biodiversity research.
-#'
-#' @docType data
-#' @keywords datasets
-#' @author tobeadded
-#' @name fundingCAN_BD
-#' @usage data(fundingCAN_BD)
-#' @format A data frame of 29 rows and 15 columns
-"fundingCAN_BD"
-
-#' Canadian fundings allocated to Climate Change research.
-#'
-#' Canadian fundings allocated to Climate Change research.
-#'
-#' @docType data
-#' @keywords datasets
-#' @author tobeadded
-#' @name fundingCAN_CC
-#' @usage data(fundingCAN_CC)
-#' @format A data frame of 29 rows and 15 columns
-"fundingCAN_CC"
 
 #' American fundings allocated to Biodiversity and Climate Change research.
 #'
@@ -114,14 +80,27 @@
 "fundingUS"
 
 
-#' British fundings allocated to Biodiversity and Climate Change research.
+#' Canadian fundings allocated to Biodiversity research.
 #'
-#' British fundings allocated to Climate Change research.
+#' Canadian fundings allocated to Biodiversity research.
 #'
 #' @docType data
 #' @keywords datasets
 #' @author tobeadded
-#' @name fundingUK
-#' @usage data(fundingUK)
+#' @name fundingCAN_BD
+#' @usage data(fundingCAN_BD)
 #' @format A data frame of 29 rows and 15 columns
-"fundingUK"
+"fundingCAN_BD"
+
+
+#' Canadian fundings allocated to Climate Change research.
+#'
+#' Canadian fundings allocated to Climate Change research.
+#'
+#' @docType data
+#' @keywords datasets
+#' @author tobeadded
+#' @name fundingCAN_CC
+#' @usage data(fundingCAN_CC)
+#' @format A data frame of 29 rows and 15 columns
+"fundingCAN_CC"
