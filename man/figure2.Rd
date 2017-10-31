@@ -23,13 +23,15 @@ figure2(pts, monthcan, monthusa, monthgbr, file = "ms-figure2.pdf",
 \item{col2}{A specification for the second color.}
 }
 \value{
-Creates a figure.
+Creates a figure 2 as a pdf file.
 }
 \description{
 Code that creates figure 2.
 }
 \examples{
-# figure2(utils::data(events), utils::data(monthcan), utils::data(monthusa), utils::data(monthgbr))
+#-- Not run
+# data(events); data(monthcan); data(monthusa); data(monthgbr)
+# figure2(events, monthcan, monthusa, monthgbr)
 
 }
 \author{

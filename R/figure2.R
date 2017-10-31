@@ -11,7 +11,7 @@
 #' @param col2 A specification for the second color.
 #'
 #' @return
-#' Creates a figure.
+#' Creates a figure 2 as a pdf file.
 #'
 #' @author Nicolas Casajus & Kevin Cazelles
 #'
@@ -19,7 +19,9 @@
 #' @importFrom stats na.omit
 #'
 #' @examples
-#' # figure2(utils::data(events), utils::data(monthcan), utils::data(monthusa), utils::data(monthgbr))
+#' #-- Not run
+#' # data(events); data(monthcan); data(monthusa); data(monthgbr)
+#' # figure2(events, monthcan, monthusa, monthgbr)
 #'
 #' @export
 
