@@ -36,7 +36,7 @@ grDevices::png(file='inst/fig/ms-figure2.png', width = 8, height = 6, res = 300,
 grDevices::dev.off()
 ```
 
-![](inst/ms-figure2.png)
+![](inst/fig/ms-figure2.png)
 
 
 
