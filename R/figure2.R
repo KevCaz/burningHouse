@@ -1,6 +1,11 @@
-#' @title Code that creates figure 2
+#' @title Code that creates figure 2 Legagneux et al. 2017.
 #'
-#' @description Code that creates figure 2.
+#' @description Code that creates figure 2 from Legagneux et al. 2017, that is
+#' the number of newspaper articles published per month on biodiversity (
+#' \code{col2}) or climate change (\code{col1}) issues in US, Canada and UK.
+#' Detected peaks (plain dots) and associated events are shown. Peaks without
+#' associated events (empty dots) could not be associated with a priori events.
+#' Events that embraced both CC and BD issues are written in bold.
 #'
 #' @param pts a dataframe of events.
 #' @param monthcan monthly publications -- Canada.

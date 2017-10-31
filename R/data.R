@@ -51,7 +51,6 @@
 "events"
 
 
-
 #' Canadian and American fundings allocated to Climate Change and BioDiversity research.
 #'
 #' Canadian and American fundings allocated to Climate Change and BioDiversity research.
@@ -61,5 +60,19 @@
 #' @author tobeadded
 #' @name fundingUSCAN
 #' @usage data(fundingUSCAN)
-#' @format A data frame of 29 rows and 15 columns
+#' @format A data frame of 25 rows and 6 columns
 "fundingUSCAN"
+
+
+#' Worldwide scientific papers published in peer-reviewed literature on biodiversity and climate change.
+#'
+#' Worldwide scientific papers published in peer-reviewed literature on biodiversity and climate change
+#' retrieved from Web of Science on March 3rd, 2017.
+#'
+#' @docType data
+#' @keywords datasets
+#' @author tobeadded
+#' @name sciPapers
+#' @usage data(sciPapers)
+#' @format A data frame of 26 rows and 3 columns
+"sciPapers"

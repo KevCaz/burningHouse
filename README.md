@@ -32,6 +32,19 @@ install_github('KevCaz/burningHouse')
 
 ## Figures
 
+### Figure 1a
+
+```r
+data(sciPapers)
+grDevices::png('inst/fig/ms-figure1a.png', height = 5, width = 7, res = 300, unit = 'in')
+  figure1a(
+    sciPapers$year,
+    sciPapers$records_CC,
+    sciPapers$records_BD
+  )
+grDevices::dev.off()
+```
+
 ### Figure 1b
 
 ```r
@@ -63,5 +76,8 @@ grDevices::dev.off()
 ## To do
 
 - [X] add figure 1a;
-- [ ] add figure 1b;
+- [X] add figure 1b;
+- [ ] review documentation (especially for data we should detail columns' content);
+- [ ] change PB for BD;
+- [ ] change font family;
 - [ ] add a DOI to this repository once the paper is published.

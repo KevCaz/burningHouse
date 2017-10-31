@@ -2,7 +2,7 @@
 % Please edit documentation in R/figure2.R
 \name{figure2}
 \alias{figure2}
-\title{Code that creates figure 2}
+\title{Code that creates figure 2 Legagneux et al. 2017.}
 \usage{
 figure2(pts, monthcan, monthusa, monthgbr, col1 = "#594023",
   col2 = "#9eb844")
@@ -24,7 +24,12 @@ figure2(pts, monthcan, monthusa, monthgbr, col1 = "#594023",
 Creates figure 2.
 }
 \description{
-Code that creates figure 2.
+Code that creates figure 2 from Legagneux et al. 2017, that is
+the number of newspaper articles published per month on biodiversity (
+\code{col2}) or climate change (\code{col1}) issues in US, Canada and UK.
+Detected peaks (plain dots) and associated events are shown. Peaks without
+associated events (empty dots) could not be associated with a priori events.
+Events that embraced both CC and BD issues are written in bold.
 }
 \examples{
 #-- Not run

@@ -4,7 +4,7 @@
 \name{fundingUSCAN}
 \alias{fundingUSCAN}
 \title{Canadian and American fundings allocated to Climate Change and BioDiversity research.}
-\format{A data frame of 29 rows and 15 columns}
+\format{A data frame of 25 rows and 6 columns}
 \usage{
 data(fundingUSCAN)
 }
