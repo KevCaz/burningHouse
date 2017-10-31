@@ -32,12 +32,12 @@ install_github('KevCaz/burningHouse')
 
 ## Figures
 
-### Figure 1a
+### Figure 1b
 
 ```r
 data(fundingUSCAN)
-grDevices::png("inst/fig/ms-figure1a.png", height = 5, width = 7, res = 300, unit = "in")
-  figure1a(
+grDevices::png("inst/fig/ms-figure1b.png", height = 5, width = 7, res = 300, unit = "in")
+  figure1b(
     fundingUSCAN$year,
     fundingUSCAN$CC_CA + fundingUSCAN$CC_US,
     fundingUSCAN$PB_CA + fundingUSCAN$PB_US
