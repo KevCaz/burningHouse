@@ -1,6 +1,7 @@
 # kc
 inst/*.pdf
 inst/tmp.R
+inst/*.rda
 makefile
 
 # History files

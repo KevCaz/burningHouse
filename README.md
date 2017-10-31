@@ -10,8 +10,13 @@ To be added.
 ## Why this repository?
 
 This repository reproduces the figures found in XXXXXX.
-The form of a standard R package helps sharing the code and this repository
-is a good media to discuss any issue regarding the code implementation.
+The reasons for using a standard R package are  twofold:
+
+1- efficiently assessing the code quality of the code (here we simply use `R CMD check`)
+
+2- make the sharing of the code easy (especially if you have an adequate version
+  of R, you will be able to install the package irrespective of your OS)
+
 
 
 ## Installation
@@ -27,6 +32,20 @@ install_github('KevCaz/burningHouse')
 
 ## Figures
 
+### Figure 1a
+
+```r
+data(fundingUSCAN)
+grDevices::png("inst/fig/ms-figure1a.png", height = 5, width = 7, res = 300, unit = "in")
+  figure1a(
+    fundingUSCAN$year,
+    fundingUSCAN$CC_CA + fundingUSCAN$CC_US,
+    fundingUSCAN$PB_CA + fundingUSCAN$PB_US
+  )
+grDevices::dev.off()
+```
+
+
 ### Figure 2
 
 ```r
@@ -36,11 +55,11 @@ grDevices::png(file='inst/fig/ms-figure2.png', width = 8, height = 6, res = 300,
 grDevices::dev.off()
 ```
 
-![](inst/fig/ms-figure2.png)
+<!-- ![](inst/fig/ms-figure2.png) -->
 
 
 
 ## To do
 
-- [ ] add figure 1a and figure 1b
-- [ ] add a DOI to the repo
+- [ ] add figure 1a and figure 1b;
+- [ ] add a DOI to this repository.

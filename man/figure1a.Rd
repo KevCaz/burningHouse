@@ -4,10 +4,14 @@
 \alias{figure1a}
 \title{Code that creates figure 1a}
 \usage{
-figure1a(file = "ms-figure1a.pdf", col1 = "#594023", col2 = "#9eb844")
+figure1a(time, CC_f, PB_f, col1 = "#594023", col2 = "#9eb844")
 }
 \arguments{
-\item{file}{a character string giving the name of the file (see \code{\link[grDevices]{pdf}}).}
+\item{time}{time values.}
+
+\item{CC_f}{Time-series values of the research funding allocated to climate change.}
+
+\item{PB_f}{Time-series values of the research funding allocated to biodiversity.}
 
 \item{col1}{A specification for the first color.}
 
@@ -20,7 +24,15 @@ Creates a figure.
 Code that creates figure 1a.
 }
 \examples{
-figure1a()
+# Not run:
+# data(fundingUSCAN)
+# grDevices::png('inst/fig/ms-figure1a.png', height = 5, width = 7, res = 300, unit = 'in')
+#   figure1a(
+#     fundingUSCAN$year,
+#     fundingUSCAN$CC_CA + fundingUSCAN$CC_US,
+#     fundingUSCAN$PB_CA + fundingUSCAN$PB_US
+#   )
+# grDevices::dev.off()
 
 }
 \author{
