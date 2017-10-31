@@ -45,6 +45,8 @@ grDevices::png("inst/fig/ms-figure1a.png", height = 5, width = 7, res = 300, uni
 grDevices::dev.off()
 ```
 
+<!-- ![](inst/fig/ms-figure1a.png) -->
+
 
 ### Figure 2
 
@@ -58,8 +60,8 @@ grDevices::dev.off()
 <!-- ![](inst/fig/ms-figure2.png) -->
 
 
-
 ## To do
 
-- [ ] add figure 1a and figure 1b;
-- [ ] add a DOI to this repository.
+- [X] add figure 1a;
+- [ ] add figure 1b;
+- [ ] add a DOI to this repository once the paper is published.
