@@ -25,10 +25,13 @@ library(devtools)
 install_github('KevCaz/burningHouse')
 ```
 
-## Example
+## Figures
 
 ```r
-figure1()
+data(events); data(monthcan); data(monthusa); data(monthgbr)
+grDevices::png(file='inst/fig/ms-figure2.png', width = 8, height = 6, res = 300, unit = 'in')
+  figure2(events, monthcan, monthusa, monthgbr)
+grDevices::dev.off()
 ```
 
 

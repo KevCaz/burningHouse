@@ -6,12 +6,11 @@
 #' @param monthcan monthly publications -- Canada.
 #' @param monthusa monthly publications -- USA.
 #' @param monthgbr monthly publications -- Great Britain.
-#' @param file a character string giving the name of the file (see \code{\link[grDevices]{pdf}}).
 #' @param col1 A specification for the first color.
 #' @param col2 A specification for the second color.
 #'
 #' @return
-#' Creates a figure 2 as a pdf file.
+#' Creates figure 2.
 #'
 #' @author Nicolas Casajus & Kevin Cazelles
 #'
@@ -21,15 +20,15 @@
 #' @examples
 #' #-- Not run
 #' # data(events); data(monthcan); data(monthusa); data(monthgbr)
-#' # figure2(events, monthcan, monthusa, monthgbr)
+#' # grDevices::png(file='inst/fig/ms-figure2.png', width = 8, height = 6, res = 300, unit = 'in')
+#' #  figure2(events, monthcan, monthusa, monthgbr)
+#' # grDevices::dev.off()
 #'
 #' @export
 
-figure2 <- function(pts, monthcan, monthusa, monthgbr, file = "ms-figure2.pdf", col1 = "#594023", 
-    col2 = "#9eb844") {
+figure2 <- function(pts, monthcan, monthusa, monthgbr, col1 = "#594023", col2 = "#9eb844") {
     
-    
-    ##----
+    ##-- import data
     month <- monthcan
     month$CC <- monthcan$CC + monthusa$CC + monthgbr$CC
     month$PB <- monthcan$PB + monthusa$PB + monthgbr$PB
@@ -37,29 +36,24 @@ figure2 <- function(pts, monthcan, monthusa, monthgbr, file = "ms-figure2.pdf", 
     ymax <- max(na.omit(as.vector(as.matrix(month$CC))))
     yrng <- ifelse(ymax > 2000, 200, ifelse(ymax > 900, 100, 50))
     
-    
-    grDevices::pdf(file, width = 8, height = 6)
-    # grDevices::png(file, width = 8, height = 6, res = 300, unit = 'in')
+    ##-- set
     par(mar = c(3, 1, 0.5, 3), mgp = c(2.5, 0.75, 0), xaxs = "i", yaxs = "i", family = "serif", 
-        new = FALSE, fig = c(0, 1, 0, 1))
+        fig = c(0, 1, 0, 1))
     
-    ##-- Empty plot
-    
+    ##-- create an empty plot
     graphics::plot(0, type = "n", xlab = "", ylab = "Number of articles", xlim = c(as.Date("1989-12-01"), 
         as.Date("2016-12-15")), ylim = c(0, yrng * (floor(ymax/yrng) + 1) + (yrng/2)), 
         bty = "n", axes = FALSE, font.lab = 2)
     
     
-    
-    ##-- Add times series
+    ##-- add times series
     polygon(x = c(as.Date("1990-01-15"), as.Date(month$month[1:323]), as.Date("2016-12-15")), 
         y = c(0, month$CC[1:323], 0), col = paste0(col1, "CC"), border = col1)
     polygon(x = c(as.Date("1990-01-15"), as.Date(month$month[1:323]), as.Date("2016-12-15")), 
         y = c(0, month$PB[1:323], 0), col = paste0(col2, "CC"), border = col2)
     
     
-    
-    ##-- Add frame and axes
+    ##-- add frame and axes
     axis(4, seq(0, yrng * (floor(ymax/yrng) + 1), yrng), seq(0, yrng * (floor(ymax/yrng) + 
         1), yrng), las = 1, lwd = 1, lwd.ticks = 1)
     axis(1, as.Date(paste0(seq(1990, 2016, 2), "-01-15")), seq(1990, 2016, 2), lwd = 0, 
@@ -67,12 +61,10 @@ figure2 <- function(pts, monthcan, monthusa, monthgbr, file = "ms-figure2.pdf", 
     axis(1, c(as.Date("1990-01-15"), as.Date("2016-12-31")), labels = FALSE, lwd.ticks = 0)
     
     
-    
-    ##-- Add peaks
-    
+    ##-- add peaks
     par(xpd = TRUE)
     for (i in 1:17) {
-        
+        ##--
         label <- as.character(pts[i, "keyword"])
         if (i %in% c(1, 2, 7)) {
             font <- 2
@@ -145,34 +137,18 @@ figure2 <- function(pts, monthcan, monthusa, monthgbr, file = "ms-figure2.pdf", 
     }
     par(xpd = FALSE)
     
-    
     points(month[which(month$month == "1992-06-15"), c("month", "PB")], pch = 19, 
         cex = 0.75)
     points(month[which(month$month == "1997-06-15"), c("month", "PB")], pch = 19, 
         cex = 0.75)
     points(month[which(month$month == "2002-08-15"), c("month", "PB")], pch = 19, 
         cex = 0.75)
-    # lines(x = c(as.Date('1992-06-15'), as.Date('1992-06-15')), y =
-    # c(month[which(month$month == '1992-06-15'), 'PB'], month[which(month$month ==
-    # '1992-06-15'), 'CC']), cex = .75) lines(x = c(as.Date('1997-06-15'),
-    # as.Date('1997-06-15')), y = c(month[which(month$month == '1997-06-15'), 'PB'],
-    # month[which(month$month == '1997-06-15'), 'CC']), cex = .75) lines(x =
-    # c(as.Date('2002-09-15'), as.Date('2002-09-15')), y = c(month[which(month$month
-    # == '2002-09-15'), 'PB'], month[which(month$month == '2002-09-15'), 'CC']), cex
-    # = .75)
-    
-    
-    ### Add source information
-    
-    # mtext(at = 17150, side = 1, line = 1.825, source, cex = .65, font = 3, adj = 1)
-    
-    
     
     xmax <- sum(na.omit(month$CC))/1000
     xrng <- ifelse(xmax > 100, 40, ifelse(xmax > 50, 20, 10))
     
-    ### Add inset
     
+    ##-- add inset
     par(new = TRUE, fig = c(0, 0.5, 0.7, 1), mar = c(3, 1, 1.5, 2), mgp = c(2.5, 
         0.5, 0))
     graphics::plot(x = c(0, 0), y = c(0.5, 2.5), xlim = c(0, xrng * (floor(xmax/xrng) + 
@@ -192,13 +168,9 @@ figure2 <- function(pts, monthcan, monthusa, monthgbr, file = "ms-figure2.pdf", 
         cex = 1.34)
     
     
-    ##-- Close device
-    grDevices::dev.off()
-    
+    ##-- return NULL
     invisible(NULL)
-    
 }
-
 
 
 

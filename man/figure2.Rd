@@ -4,8 +4,8 @@
 \alias{figure2}
 \title{Code that creates figure 2}
 \usage{
-figure2(pts, monthcan, monthusa, monthgbr, file = "ms-figure2.pdf",
-  col1 = "#594023", col2 = "#9eb844")
+figure2(pts, monthcan, monthusa, monthgbr, col1 = "#594023",
+  col2 = "#9eb844")
 }
 \arguments{
 \item{pts}{a dataframe of events.}
@@ -16,14 +16,12 @@ figure2(pts, monthcan, monthusa, monthgbr, file = "ms-figure2.pdf",
 
 \item{monthgbr}{monthly publications -- Great Britain.}
 
-\item{file}{a character string giving the name of the file (see \code{\link[grDevices]{pdf}}).}
-
 \item{col1}{A specification for the first color.}
 
 \item{col2}{A specification for the second color.}
 }
 \value{
-Creates a figure 2 as a pdf file.
+Creates figure 2.
 }
 \description{
 Code that creates figure 2.
@@ -31,7 +29,9 @@ Code that creates figure 2.
 \examples{
 #-- Not run
 # data(events); data(monthcan); data(monthusa); data(monthgbr)
-# figure2(events, monthcan, monthusa, monthgbr)
+# grDevices::png(file='inst/fig/ms-figure2.png', width = 8, height = 6, res = 300, unit = 'in')
+#  figure2(events, monthcan, monthusa, monthgbr)
+# grDevices::dev.off()
 
 }
 \author{
