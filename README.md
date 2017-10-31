@@ -27,6 +27,8 @@ install_github('KevCaz/burningHouse')
 
 ## Figures
 
+### Figure 2
+
 ```r
 data(events); data(monthcan); data(monthusa); data(monthgbr)
 grDevices::png(file='inst/fig/ms-figure2.png', width = 8, height = 6, res = 300, unit = 'in')
@@ -34,7 +36,11 @@ grDevices::png(file='inst/fig/ms-figure2.png', width = 8, height = 6, res = 300,
 grDevices::dev.off()
 ```
 
+![](inst/ms-figure2.png)
+
+
 
 ## To do
 
-- [ ] add figure 2
+- [ ] add figure 1a and figure 1b
+- [ ] add a DOI to the repo
