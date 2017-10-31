@@ -2,7 +2,7 @@
 #'
 #' @description Code that creates figure 1a.
 #'
-#' @param file a character string giving the name of the file (see \code{\link[gr]{pdf}}).
+#' @param file a character string giving the name of the file (see \code{\link[grDevices]{pdf}}).
 #' @param col1 A specification for the first color.
 #' @param col2 A specification for the second color.
 #'

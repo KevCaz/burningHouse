@@ -7,7 +7,7 @@
 figure1a(file = "ms-figure1a.pdf", col1 = "#594023", col2 = "#9eb844")
 }
 \arguments{
-\item{file}{a character string giving the name of the file (see \code{\link[gr]{pdf}}).}
+\item{file}{a character string giving the name of the file (see \code{\link[grDevices]{pdf}}).}
 
 \item{col1}{A specification for the first color.}
 

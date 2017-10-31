@@ -16,7 +16,7 @@ figure2(pts, monthcan, monthusa, monthgbr, file = "ms-figure2.pdf",
 
 \item{monthgbr}{monthly publications -- Great Britain.}
 
-\item{file}{a character string giving the name of the file (see \code{\link[gr]{pdf}}).}
+\item{file}{a character string giving the name of the file (see \code{\link[grDevices]{pdf}}).}
 
 \item{col1}{A specification for the first color.}
 
