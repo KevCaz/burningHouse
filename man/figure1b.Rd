@@ -21,7 +21,9 @@ figure1b(time, CC_f, PB_f, col1 = "#594023", col2 = "#9eb844")
 Creates a figure.
 }
 \description{
-Code that creates figure 1b.
+Code that creates a figure presenting the number of worldwide scientific
+papers published in peer-reviewed literature on biodiversity (\code{col2})
+and climate change (\code{col1}) from 1991 to 2016.
 }
 \examples{
 # Not run:
@@ -30,7 +32,8 @@ Code that creates figure 1b.
 #   figure1b(
 #     fundingUSCAN$year,
 #     fundingUSCAN$CC_CA + fundingUSCAN$CC_US,
-#     fundingUSCAN$PB_CA + fundingUSCAN$PB_US
+#     fundingUSCAN$BD_CA + fundingUSCAN$BD_US,
+#     col1 = '#b57653', col2 = '#8bcf35'
 #   )
 # grDevices::dev.off()
 

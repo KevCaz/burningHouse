@@ -4,17 +4,12 @@
 \alias{figure2}
 \title{Code that creates figure 2 Legagneux et al. 2017.}
 \usage{
-figure2(pts, monthcan, monthusa, monthgbr, col1 = "#594023",
-  col2 = "#9eb844")
+figure2(pts, newsPapers, col1 = "#594023", col2 = "#9eb844")
 }
 \arguments{
-\item{pts}{a dataframe of events.}
+\item{pts}{A dataframe of events.}
 
-\item{monthcan}{monthly publications -- Canada.}
-
-\item{monthusa}{monthly publications -- USA.}
-
-\item{monthgbr}{monthly publications -- Great Britain.}
+\item{newsPapers}{Monthly publications -- Canada + USA + UK.}
 
 \item{col1}{A specification for the first color.}
 
@@ -32,10 +27,10 @@ associated events (empty dots) could not be associated with a priori events.
 Events that embraced both CC and BD issues are written in bold.
 }
 \examples{
-#-- Not run
-# data(events); data(monthcan); data(monthusa); data(monthgbr)
+#-- Not run:
+# data(events); data(newsPapers);
 # grDevices::png(file='inst/fig/ms-figure2.png', width = 8, height = 6, res = 300, unit = 'in')
-#  figure2(events, monthcan, monthusa, monthgbr)
+#  figure2(events, newsPapers)
 # grDevices::dev.off()
 
 }

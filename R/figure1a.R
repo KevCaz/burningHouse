@@ -50,7 +50,7 @@ figure1a <- function(time, CC_p, PB_p, col1 = "#594023", col2 = "#9eb844") {
     axis(4, at = seq(0, 25, 5), labels = paste0(seq(0, 25, 5), "K"), lwd = 0, lwd.ticks = cex_mt)
     axis(1, at = seq(1992, 2016, 4), labels = seq(1992, 2016, 4), lwd = 0, lwd.ticks = cex_mt)
     axis(1, at = c(1990.5, 2016.5), labels = F, lwd = cex_mt, lwd.ticks = 0)
-    text(1990, (par()$usr[3] + par()$usr[4])/4, "b)", pos = 4, cex = 1.6, font = 2)
+    text(1990, (par()$usr[3] + par()$usr[4])/4, "a)", pos = 4, cex = 1.8, font = 2)
     
     
     ## Top-left barplot

@@ -9,8 +9,8 @@ To be added.
 
 ## Why this repository?
 
-This repository reproduces the figures found in XXXXXX.
-The reasons for using a standard R package are  twofold:
+This repository reproduces the figures found in XXXX.
+The reasons for using a standard R package are twofold:
 
 1- efficiently assessing the code quality of the code (here we simply use `R CMD check`)
 
@@ -45,6 +45,9 @@ grDevices::png('inst/fig/ms-figure1a.png', height = 5, width = 7, res = 300, uni
 grDevices::dev.off()
 ```
 
+<!-- ![](inst/fig/ms-figure1a.png) -->
+
+
 ### Figure 1b
 
 ```r
@@ -53,20 +56,21 @@ grDevices::png("inst/fig/ms-figure1b.png", height = 5, width = 7, res = 300, uni
   figure1b(
     fundingUSCAN$year,
     fundingUSCAN$CC_CA + fundingUSCAN$CC_US,
-    fundingUSCAN$PB_CA + fundingUSCAN$PB_US
+    fundingUSCAN$BD_CA + fundingUSCAN$BD_US,
+    col1 = "#604a3c", col2 = "#69ab78"
   )
 grDevices::dev.off()
 ```
 
-<!-- ![](inst/fig/ms-figure1a.png) -->
+<!-- ![](inst/fig/ms-figure1b.png) -->
 
 
 ### Figure 2
 
 ```r
-data(events); data(monthcan); data(monthusa); data(monthgbr)
+data(events); data(newsPapers);
 grDevices::png(file='inst/fig/ms-figure2.png', width = 8, height = 6, res = 300, unit = 'in')
-  figure2(events, monthcan, monthusa, monthgbr)
+  figure2(events, newsPapers, col1 = "#604a3c", col2 = "#69ab78")
 grDevices::dev.off()
 ```
 
@@ -77,7 +81,7 @@ grDevices::dev.off()
 
 - [X] add figure 1a;
 - [X] add figure 1b;
+- [X] change PB for BD;
 - [ ] review documentation (especially for data we should detail columns' content);
-- [ ] change PB for BD;
-- [ ] change font family;
+- [ ] change font family (if needed);
 - [ ] add a DOI to this repository once the paper is published.

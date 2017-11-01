@@ -1,6 +1,8 @@
 #' @title Code that creates figure 1b
 #'
-#' @description Code that creates figure 1b.
+#' @description Code that creates a figure presenting the number of worldwide scientific
+#' papers published in peer-reviewed literature on biodiversity (\code{col2})
+#' and climate change (\code{col1}) from 1991 to 2016.
 #'
 #' @param time time values.
 #' @param CC_f Time-series values of the research funding allocated to climate change.
@@ -22,7 +24,8 @@
 #' #   figure1b(
 #' #     fundingUSCAN$year,
 #' #     fundingUSCAN$CC_CA + fundingUSCAN$CC_US,
-#' #     fundingUSCAN$PB_CA + fundingUSCAN$PB_US
+#' #     fundingUSCAN$BD_CA + fundingUSCAN$BD_US,
+#' #     col1 = '#b57653', col2 = '#8bcf35'
 #' #   )
 #' # grDevices::dev.off()
 #'
@@ -30,7 +33,6 @@
 
 
 figure1b <- function(time, CC_f, PB_f, col1 = "#594023", col2 = "#9eb844") {
-    
     
     ##-- setup graphical parameters
     par(lend = 2, xaxs = "i", yaxs = "i", las = 1, mar = c(4, 1, 3, 3.8), mgp = c(2.5, 
@@ -53,7 +55,7 @@ figure1b <- function(time, CC_f, PB_f, col1 = "#594023", col2 = "#9eb844") {
     axis(1, at = seq(1992, 2016, 4), labels = seq(1992, 2016, 4), lwd = 0, lwd.ticks = cex_mt)
     axis(1, at = c(1990.5, 2016.5), labels = F, lwd = cex_mt, lwd.ticks = 0)
     par(xpd = TRUE)
-    text(1990, (par()$usr[3] + par()$usr[4])/4, "a)", pos = 4, cex = 1.6, font = 2)
+    text(1990, (par()$usr[3] + par()$usr[4])/4, "b)", pos = 4, cex = 1.8, font = 2)
     par(xpd = FALSE)
     
     ##-- Top-left barplot

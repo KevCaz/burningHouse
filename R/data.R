@@ -1,39 +1,17 @@
-#' Monthly record of publicatoin in Canada for cc and bd
+#' Monthly record of newspapers articles dealing with climate change (CC) or
+#' biodiversity (BD).
 #'
-#' Monthly record of publicatoin in Canada for cc and bd
-#'
-#' @docType data
-#' @keywords datasets
-#' @author tobeadded
-#' @name monthcan
-#' @usage data(monthcan)
-#' @format A data frame of 324 rows and 3 columns
-"monthcan"
-
-#' Monthly record of publicatoin in UK for cc and bd
-#'
-#' Monthly record of publicatoin in UK for cc and bd
+#' Monthly record of newspapers articles dealing with climate change (CC) and/or
+#' biodiversity (BD). Articles recorded were extracted from newspapers we assumed
+#' to be the most popular in USA, Canada and UK.
 #'
 #' @docType data
 #' @keywords datasets
 #' @author tobeadded
-#' @name monthgbr
-#' @usage data(monthgbr)
+#' @name newsPapers
+#' @usage data(newsPapers)
 #' @format A data frame of 324 rows and 3 columns
-"monthgbr"
-
-
-#' Monthly record of publicatoin in usa for cc and bd
-#'
-#' Monthly record of publicatoin in usa for cc and bd
-#'
-#' @docType data
-#' @keywords datasets
-#' @author tobeadded
-#' @name monthusa
-#' @usage data(monthusa)
-#' @format A data frame of 324 rows and 3 columns
-"monthusa"
+"newsPapers"
 
 
 
