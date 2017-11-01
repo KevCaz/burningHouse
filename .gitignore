@@ -2,7 +2,7 @@
 inst/*.pdf
 inst/tmp.R
 inst/*.rda
-makefile
+Makefile
 
 # History files
 .Rhistory
