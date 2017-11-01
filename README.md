@@ -1,5 +1,7 @@
 # Our house is burning: discrepancy in climate change vs biodiversity coverage in the media
 
+[![Build Status](https://travis-ci.org/KevCaz/burningHouse.svg?branch=master)](https://travis-ci.org/KevCaz/burningHouse)
+
 
 ## Abstract
 
