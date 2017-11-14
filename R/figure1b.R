@@ -15,7 +15,7 @@
 #'
 #' @author Kevin Cazelles & Nicolas Casajus
 #'
-#' @importFrom graphics axis polygon par axis text lines points mtext barplot
+#' @importFrom graphics axis polygon par text lines points mtext barplot
 #'
 #' @examples
 #' # Not run:
