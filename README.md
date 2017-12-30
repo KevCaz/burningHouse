@@ -1,5 +1,7 @@
 # burningHouse
 
+## Description
+
 This repository contain all the data, analyses and how to reproduce figures found in the articles *Our house is burning: discrepancy in climate change vs biodiversity coverage in the media* by Legagneux *et al.* DOI: 2BAdded.
 
 We use a standard R package to:
@@ -8,10 +10,16 @@ We use a standard R package to:
 
   2- readily share our code (see installation section)
 
+We however acknowledge that despite the form of a standard R package, the code
+presented is more a organized script that a package (*i.e.* functions included
+are not general).
+
+## Current status
+
 [![Build Status](https://travis-ci.org/KevCaz/burningHouse.svg?branch=master)](https://travis-ci.org/KevCaz/burningHouse)
 
 
-## Abstract
+## Abstract of the paper
 
 > Scientists, policy makers and journalists are three key, interconnected players involved in prioritizing and implementing solutions to mitigate the consequences of anthropogenic pressures on the environment. We extensively scrutinized the scientific literature, research funding and press articles from the USA, Canada and United Kingdom addressing climate change and biodiversity issues between 1991 and 2016. We found that media coverage of climate change was up to eight times greater compared to biodiversity. This discrepancy could not be explained by different scientific output between the two issues. Moreover, climate change media coverage was often related to specific events whereas no such indication of a connection was found in the case of biodiversity. An international communication strategy is deeply required to raise public awareness on biodiversity issues, which in turn could provide rewards both in terms of increased research funding and discoveries.
 
@@ -34,7 +42,15 @@ install_github('KevCaz/burningHouse')
 
 ## Data
 
-We collect data and store them as data frame. Below is the list of data frames available:
+We collect data and store them as data frame. Below is the list of data frames
+available:
+
+- **events**: international events reported on figure 2 (see below).
+- **fundingsUSCA**: fundings time series (yearly frequency).
+- **newsPaper**: number of articles in newspapers time series (yearly frequency).
+<!-- - **newsNames**: names of the news papers included in the study. -->
+- **sciPaper**: number of articles in newspapers time series (yearly frequency).
+
 
 To use these datasets you should call `data()` function, for instance:
 
@@ -54,7 +70,9 @@ Some details are provided for the data using `?` or `help()`:
 
 ## Figures
 
-Creating the figures below required to 1- collect data and 2- do a peaks detection analysis. All data are available as data frames and the peaks detection analysis is presented as a example of the `detectPeaks()` function we used.
+Creating the figures below required to 1- collect data and 2- do a peaks
+detection analysis. Data are available as data frames and the peaks detection
+analysis is presented as a example of the `detectPeaks()` function we used.
 
 
 ### Figure 1a
@@ -70,7 +88,7 @@ grDevices::png('inst/fig/ms-figure1a.png', height = 5, width = 7, res = 300, uni
 grDevices::dev.off()
 ```
 
-<!-- ![](inst/fig/ms-figure1a.png) -->
+![](inst/fig/ms-figure1a.png)
 
 
 ### Figure 1b
@@ -87,7 +105,7 @@ grDevices::png("inst/fig/ms-figure1b.png", height = 5, width = 7, res = 300, uni
 grDevices::dev.off()
 ```
 
-<!-- ![](inst/fig/ms-figure1b.png) -->
+![](inst/fig/ms-figure1b.png)
 
 
 ### Figure 2
@@ -99,7 +117,7 @@ grDevices::png(file='inst/fig/ms-figure2.png', width = 8, height = 6, res = 300,
 grDevices::dev.off()
 ```
 
-<!-- ![](inst/fig/ms-figure2.png) -->
+![](inst/fig/ms-figure2.png)
 
 
 ## To do
@@ -107,4 +125,4 @@ grDevices::dev.off()
 - [ ] review documentation (especially for data we should detail what columns' content);
 - [ ] add the DOI of the paper
 - [ ] use Zenodo for the repo.
-- [ ] `newsPapers$CC_GB` should be `newsPapers$CC_UK`. 
+- [ ] `newsPapers$CC_GB` should be `newsPapers$CC_UK`.

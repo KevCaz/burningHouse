@@ -1,11 +1,12 @@
 #' @title Detect peaks in the newspapers articles time series.
 #'
-#' @description Code used to detect peaks in the newspapers articles time series.
+#' @description Detect peaks in the newspapers articles time series.
 #'
-#' @param newsPapers A data frame that includes the number of newpapers articles.
+#' @param newsPapers A data frame that includes the number of newpapers articles
+#' for climate change and  
 #'
 #' @return
-#' A list of two elements
+#' A list of two elements: significant peaks fot the two
 #'
 #' @author Nicolas Casajus & Kevin Cazelles
 #'
