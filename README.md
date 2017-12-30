@@ -2,13 +2,15 @@
 
 ## Description
 
-This repository contain all the data, analyses and how to reproduce figures found in the articles *Our house is burning: discrepancy in climate change vs biodiversity coverage in the media* by Legagneux *et al.* DOI: 2BAdded.
+This repository includes the data, analyses and how to reproduce figures found
+in the article *Our house is burning: discrepancy in climate change vs
+biodiversity coverage in the media* by Legagneux *et al.* DOI: 2BAdded.
 
-We use a standard R package to:
+We have used a standard R package to:
 
-  1- efficiently assess the quality of our code (here we simply use `R CMD check`)
+  1- efficiently assess the quality of our code (here we simply use `R CMD check`);
 
-  2- readily share our code (see installation section)
+  2- readily share our code (see installation section).
 
 We however acknowledge that despite the form of a standard R package, the code
 presented is more a organized script that a package (*i.e.* functions included
@@ -29,9 +31,8 @@ are not general).
 
 ## Installation
 
-The easiest way to install the package in to use the [devtools](https://cran.r-project.org/web/packages/devtools/index.html)
-R package. Once installed, you can install the package using the following
-commands in your favorite R console:
+The easiest way to install this package is to use the [devtools](https://cran.r-project.org/web/packages/devtools/index.html)
+R package. Once installed, use the following commands in your favorite R console:
 
 ```r
 library(devtools)
@@ -51,15 +52,16 @@ available:
 - **newsPaper**: number of articles in newspapers time series (yearly frequency);
 - **newsNames**: names of the news papers included in the study;    
 - **sciPaper**: number of articles in newspapers time series (yearly frequency);    
-- **sciNames**: number of scientific paper we retrieved per journal title. 
+- **sciNames**: number of scientific paper we retrieved per journal title.
 
-To use these datasets you should call `data()` function, for instance:
+To manipulate these data frames, call the `data()` function, for instance:
 
 ```r
 data(titles)
 ```
 
-Some details are provided for the data using `?` or `help()`:
+For each dataset, details are provided in the documentation associated you can
+access with `?` or `help()`:
 
 
 ```r
