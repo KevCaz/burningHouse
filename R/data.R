@@ -20,6 +20,20 @@
 "newsPapers"
 
 
+#' Newspapers' names.
+#'
+#' Names of the newspapers included in the study.
+#'
+#' @docType data
+#' @keywords datasets
+#' @author Kevin Cazelles
+#' @name newsNames
+#' @usage data(newsNames)
+#' @format A data frame of 12 rows (1 per journal) and 2 columns: \code{country}
+#' and \code{name}.
+"newsNames"
+
+
 
 #' Major events and peaks detected.
 #'

@@ -49,9 +49,9 @@ available:
 - **events**: international events reported on figure 2 (see below).
 - **fundingsUSCA**: fundings time series (yearly frequency).
 - **newsPaper**: number of articles in newspapers time series (yearly frequency).
-<!-- - **newsNames**: names of the news papers included in the study. -->
+- **newsNames**: names of the news papers included in the study.
 - **sciPaper**: number of articles in newspapers time series (yearly frequency).
-
+<!-- - **sciNames**: names of the news papers included in the study. -->
 
 To use these datasets you should call `data()` function, for instance:
 
