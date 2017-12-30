@@ -34,8 +34,8 @@ figure2 <- function(pts, newsPapers, col1 = "#594023", col2 = "#9eb844") {
     print(newsPapers)
     
     ##-- import data
-    newsPapers$CC <- newsPapers$CC_CA + newsPapers$CC_US + newsPapers$CC_GB
-    newsPapers$BD <- newsPapers$BD_CA + newsPapers$BD_US + newsPapers$BD_GB
+    newsPapers$CC <- newsPapers$CC_CA + newsPapers$CC_US + newsPapers$CC_UK
+    newsPapers$BD <- newsPapers$BD_CA + newsPapers$BD_US + newsPapers$BD_UK
     newsPapers$month <- as.Date(paste0(as.character(newsPapers$month), "-15"))
     ymax <- max(na.omit(as.vector(as.matrix(newsPapers$CC))))
     yrng <- ifelse(ymax > 2000, 200, ifelse(ymax > 900, 100, 50))

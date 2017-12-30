@@ -17,6 +17,7 @@ are not general).
 ## Current status
 
 [![Build Status](https://travis-ci.org/KevCaz/burningHouse.svg?branch=master)](https://travis-ci.org/KevCaz/burningHouse)
+[![Build status](https://ci.appveyor.com/api/projects/status/qh4ntjow6tcho9oh/branch/master?svg=true)](https://ci.appveyor.com/project/KevCaz/burninghouse/branch/master)
 
 
 ## Abstract of the paper
@@ -123,6 +124,6 @@ grDevices::dev.off()
 ## To do
 
 - [ ] review documentation (especially for data we should detail what columns' content);
-- [ ] add the DOI of the paper
+- [ ] add the DOI of the paper.
 - [ ] use Zenodo for the repo.
-- [ ] `newsPapers$CC_GB` should be `newsPapers$CC_UK`.
+- [X] `newsPapers$CC_GB` should be `newsPapers$CC_UK`.
