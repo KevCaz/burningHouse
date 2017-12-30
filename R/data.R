@@ -4,7 +4,7 @@
 #' Time series of monthly record of newspapers articles dealing with climate
 #' change (CC) and/or biodiversity (BD). Articles recorded were extracted from
 #' newspapers we assumed to be the most popular in Canada (CA), United states
-#' of America (US) and the United Kingdom (see \code{titles} dataset for
+#' of America (US) and the United Kingdom (UK) (see \code{titles} dataset for
 #' more details).
 #'
 #' @docType data
@@ -89,3 +89,21 @@
 #' @format A data frame of 26 rows and 3 columns: \code{year}, \code{records_BD}
 #' and \code{records_CC}.
 "sciPapers"
+
+
+#' Number of scientific papers retrieved per journal title.
+#'
+#' This dataset includes the total of scientific papers we retrieved from Web of
+#' Science on March 3rd, 2017 per journal title.
+#'
+#' @docType data
+#' @keywords datasets
+#' @author Kevin Cazelles and Nicolas Casajus
+#' @name sciNames
+#' @usage data(sciNames)
+#' @format A data frame of 10923 rows and 3 columns: \code{sourcesTitles} giving
+#' journal titles, \code{records} that gives the number of papers we retrieved
+#' from a specific title and \code{keyword} that indicates the keyword (CC stands
+#' for climate change and BD for biodiversity) to which the number of articles
+#' refers to.
+"sciNames"

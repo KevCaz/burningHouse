@@ -46,12 +46,12 @@ install_github('KevCaz/burningHouse')
 We collect data and store them as data frame. Below is the list of data frames
 available:
 
-- **events**: international events reported on figure 2 (see below).
-- **fundingsUSCA**: fundings time series (yearly frequency).
-- **newsPaper**: number of articles in newspapers time series (yearly frequency).
-- **newsNames**: names of the news papers included in the study.
-- **sciPaper**: number of articles in newspapers time series (yearly frequency).
-<!-- - **sciNames**: names of the news papers included in the study. -->
+- **events**: international events reported on figure 2 (see below);  
+- **fundingsUSCA**: fundings time series (yearly frequency);  
+- **newsPaper**: number of articles in newspapers time series (yearly frequency);
+- **newsNames**: names of the news papers included in the study;    
+- **sciPaper**: number of articles in newspapers time series (yearly frequency);    
+- **sciNames**: number of scientific paper we retrieved per journal title. 
 
 To use these datasets you should call `data()` function, for instance:
 
@@ -123,7 +123,6 @@ grDevices::dev.off()
 
 ## To do
 
-- [ ] review documentation (especially for data we should detail what columns' content);
+- [ ] review doc of the package.
 - [ ] add the DOI of the paper.
 - [ ] use Zenodo for the repo.
-- [X] `newsPapers$CC_GB` should be `newsPapers$CC_UK`.

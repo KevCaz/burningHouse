@@ -17,7 +17,7 @@ data(newsPapers)
 Time series of monthly record of newspapers articles dealing with climate
 change (CC) and/or biodiversity (BD). Articles recorded were extracted from
 newspapers we assumed to be the most popular in Canada (CA), United states
-of America (US) and the United Kingdom (see \code{titles} dataset for
+of America (US) and the United Kingdom (UK) (see \code{titles} dataset for
 more details).
 }
 \author{
