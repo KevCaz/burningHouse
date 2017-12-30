@@ -16,10 +16,9 @@ A list of two elements
 Code used to detect peaks in the newspapers articles time series.
 }
 \examples{
-# Not run:
-# data(newsPapers)
-# newsPapers
-# detectPeaks(newsPapers)
+data(newsPapers)
+newsPapers
+detectPeaks(newsPapers)
 }
 \author{
 Nicolas Casajus & Kevin Cazelles

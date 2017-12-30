@@ -3,16 +3,22 @@
 \docType{data}
 \name{events}
 \alias{events}
-\title{Major events}
-\format{A  data frame of 29 rows and 15 columns}
+\title{Major events and peaks detected.}
+\format{A data frame of 29 rows (i.e. 29 significant peaks detected) and 15 columns:
+\code{noid} is a unique identifier of the peak, \code{keyword} indicate the
+theme of the event either climate change (CC) or biodiversity (BD),
+\code{event} record the names of events, \code{place} the city where the
+event took place and \code{date} the date when the event took place. Finally
+the 10 other columns remaining are used to locate events and their labels on figure 2.}
 \usage{
 data(events)
 }
 \description{
-A currantion of important international event/conference related to either
-biodiversity or climate change.
+Significant peaks in the time series of the number of newspapers' articles.
+Major important international event/conference related to either
+biodiversity or climate change are added when they match a peak.
 }
 \author{
-tobeadded
+Nicolas Casajus and Kevin Cazelles
 }
 \keyword{datasets}

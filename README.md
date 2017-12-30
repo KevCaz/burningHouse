@@ -1,29 +1,26 @@
-# Our house is burning: discrepancy in climate change vs biodiversity coverage in the media
+# burningHouse
+
+This repository contain all the data, analyses and how to reproduce figures found in the articles *Our house is burning: discrepancy in climate change vs biodiversity coverage in the media* by Legagneux *et al.* DOI: 2BAdded.
+
+We use a standard R package to:
+
+  1- efficiently assess the quality of our code (here we simply use `R CMD check`)
+
+  2- readily share our code (see installation section)
 
 [![Build Status](https://travis-ci.org/KevCaz/burningHouse.svg?branch=master)](https://travis-ci.org/KevCaz/burningHouse)
 
 
 ## Abstract
 
-To be added.
+> Scientists, policy makers and journalists are three key, interconnected players involved in prioritizing and implementing solutions to mitigate the consequences of anthropogenic pressures on the environment. We extensively scrutinized the scientific literature, research funding and press articles from the USA, Canada and United Kingdom addressing climate change and biodiversity issues between 1991 and 2016. We found that media coverage of climate change was up to eight times greater compared to biodiversity. This discrepancy could not be explained by different scientific output between the two issues. Moreover, climate change media coverage was often related to specific events whereas no such indication of a connection was found in the case of biodiversity. An international communication strategy is deeply required to raise public awareness on biodiversity issues, which in turn could provide rewards both in terms of increased research funding and discoveries.
 
-
-
-## Why this repository?
-
-This repository reproduces the figures found in XXXX.
-The reasons for using a standard R package are twofold:
-
-1- efficiently assessing the code quality of the code (here we simply use `R CMD check`)
-
-2- make the sharing of the code easy (especially if you have an adequate version
-  of R, you will be able to install the package irrespective of your OS)
 
 
 
 ## Installation
 
-We recommend to use the [devtools](https://cran.r-project.org/web/packages/devtools/index.html)
+The easiest way to install the package in to use the [devtools](https://cran.r-project.org/web/packages/devtools/index.html)
 R package. Once installed, you can install the package using the following
 commands in your favorite R console:
 
@@ -32,7 +29,33 @@ library(devtools)
 install_github('KevCaz/burningHouse')
 ```
 
+
+
+
+## Data
+
+We collect data and store them as data frame. Below is the list of data frames available:
+
+To use these datasets you should call `data()` function, for instance:
+
+```r
+data(titles)
+```
+
+Some details are provided for the data using `?` or `help()`:
+
+
+```r
+?titles
+```
+
+
+
+
 ## Figures
+
+Creating the figures below required to 1- collect data and 2- do a peaks detection analysis. All data are available as data frames and the peaks detection analysis is presented as a example of the `detectPeaks()` function we used.
+
 
 ### Figure 1a
 
@@ -81,9 +104,7 @@ grDevices::dev.off()
 
 ## To do
 
-- [X] add figure 1a;
-- [X] add figure 1b;
-- [X] change PB for BD;
-- [ ] review documentation (especially for data we should detail columns' content);
-- [ ] change font family (if needed);
-- [ ] add a DOI to this repository once the paper is published.
+- [ ] review documentation (especially for data we should detail what columns' content);
+- [ ] add the DOI of the paper
+- [ ] use Zenodo for the repo.
+- [ ] `newsPapers$CC_GB` should be `newsPapers$CC_UK`. 

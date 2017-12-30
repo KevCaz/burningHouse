@@ -3,6 +3,7 @@ inst/*.pdf
 inst/tmp.R
 inst/*.rda
 Makefile
+inst/csvFiles
 
 # History files
 .Rhistory

@@ -3,16 +3,19 @@
 \docType{data}
 \name{sciPapers}
 \alias{sciPapers}
-\title{Worldwide scientific papers published in peer-reviewed literature on biodiversity and climate change.}
-\format{A data frame of 26 rows and 3 columns}
+\title{Worldwide scientific papers published in peer-reviewed literature on
+biodiversity and climate change.}
+\format{A data frame of 26 rows and 3 columns: \code{year}, \code{records_BD}
+and \code{records_CC}.}
 \usage{
 data(sciPapers)
 }
 \description{
-Worldwide scientific papers published in peer-reviewed literature on biodiversity and climate change
-retrieved from Web of Science on March 3rd, 2017.
+Worldwide scientific papers published in peer-reviewed literature dealing with
+biodiversity (BD) or climate change (CC) retrieved from Web of Science on
+March 3rd, 2017.
 }
 \author{
-tobeadded
+Steve Vissault and Nicolas Casajus
 }
 \keyword{datasets}

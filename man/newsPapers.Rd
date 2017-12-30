@@ -5,16 +5,22 @@
 \alias{newsPapers}
 \title{Monthly record of newspapers articles dealing with climate change (CC) or
 biodiversity (BD).}
-\format{A data frame of 324 rows and 3 columns}
+\format{A data frame of 324 rows and 7 columns: column \code{month} records
+the month associated with the number of articles recorded in the 6 other
+columns, that is articles pertaining to either climate change (CC)
+and/or biodiversity (BD) found in the most popular journals in the three
+countries mentioned above (CA, US and UK).}
 \usage{
 data(newsPapers)
 }
 \description{
-Monthly record of newspapers articles dealing with climate change (CC) and/or
-biodiversity (BD). Articles recorded were extracted from newspapers we assumed
-to be the most popular in USA, Canada and UK.
+Time series of monthly record of newspapers articles dealing with climate
+change (CC) and/or biodiversity (BD). Articles recorded were extracted from
+newspapers we assumed to be the most popular in Canada (CA), United states
+of America (US) and the United Kingdom (see \code{titles} dataset for
+more details).
 }
 \author{
-tobeadded
+Nicolas Casajus and Pierre Legagneux
 }
 \keyword{datasets}

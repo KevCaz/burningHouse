@@ -10,14 +10,15 @@
 #' @author Nicolas Casajus & Kevin Cazelles
 #'
 #' @examples
-#' # Not run:
-#' # data(newsPapers)
-#' # newsPapers
-#' # detectPeaks(newsPapers)
+#' data(newsPapers)
+#' newsPapers
+#' detectPeaks(newsPapers)
 #' @export
 
 
 detectPeaks <- function(newsPapers) {
+    ##----
+    out <- list()
     ##---- Climate change peaks
     tmpCC <- cardidates::peakwindow(seq(1, nrow(newsPapers), 1), apply(newsPapers[, 
         grepl(names(newsPapers), pattern = "CC")], 1, sum), minpeak = 0.1, mincut = 0.6)$peaks$index

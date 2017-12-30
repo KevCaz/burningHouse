@@ -1,11 +1,11 @@
 Package: burningHouse
 Type: Package
-Title: Analyses and figures for Legagneux et al. 2017
-Version: 0.0-1
+Title: Analyses and figures for Legagneux et al. (2018)
+Version: 0.0-2
 Date: 2017-10-31
 Author: Kevin Cazelles [aut, cre], Nicolas Casajus [aut],  Pierre Legagneux [aut],  Steve Vissault [aut].
 Maintainer: Kevin Cazelles <kevin.cazelles@gmail.com>
-Description: Analyses and figures for Legagneux et al. 2017.
+Description: Analyses and figures for Legagneux et al. (2018).
 Depends:
     R (>= 3.0.0)
 Imports:

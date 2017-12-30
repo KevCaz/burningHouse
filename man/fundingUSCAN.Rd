@@ -3,15 +3,20 @@
 \docType{data}
 \name{fundingUSCAN}
 \alias{fundingUSCAN}
-\title{Canadian and American fundings allocated to Climate Change and BioDiversity research.}
-\format{A data frame of 25 rows and 6 columns}
+\title{Canadian and American fundings allocated to climate change and biodiversity research.}
+\format{A data frame of 25 rows and 6 columns: frst column \code{year} is the
+year for which the research fundings are reported in the 4 following
+columns (\code{BD_US}, \code{CC_US}, \code{CC_CA} and \code{BD_CA}). Finally,
+the last column \code{CADtoUSD} gives the times series of exchange rate
+(yearly average) for the Canadian dollar to US dollar.}
 \usage{
 data(fundingUSCAN)
 }
 \description{
-Canadian and American fundings allocated to Climate Change and BioDiversity research.
+Time series with yearly frequency of Canadian and American fundings allocated
+to climate change (CC) and biodiversity (BD) research.
 }
 \author{
-tobeadded
+Pierre Legagneux and Nicolas Casajus
 }
 \keyword{datasets}
