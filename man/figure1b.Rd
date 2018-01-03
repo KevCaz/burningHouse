@@ -2,9 +2,9 @@
 % Please edit documentation in R/figure1b.R
 \name{figure1b}
 \alias{figure1b}
-\title{Code that creates figure 1b}
+\title{Code that creates figure 1b found in Legagneux et al. 2018}
 \usage{
-figure1b(time, CC_f, PB_f, col1 = "#594023", col2 = "#9eb844")
+figure1b(time, CC_f, PB_f, colCC = "#594023", colBD = "#9eb844")
 }
 \arguments{
 \item{time}{time values.}
@@ -13,17 +13,17 @@ figure1b(time, CC_f, PB_f, col1 = "#594023", col2 = "#9eb844")
 
 \item{PB_f}{Time-series values of the research funding allocated to biodiversity.}
 
-\item{col1}{A specification for the first color.}
+\item{colCC}{A specification for the first color associated with climate change data.}
 
-\item{col2}{A specification for the second color.}
+\item{colBD}{A specification for the second color associated with biodiversity data.}
 }
 \value{
 Creates a figure.
 }
 \description{
 Code that creates a figure presenting the number of worldwide scientific
-papers published in peer-reviewed literature on biodiversity (\code{col2})
-and climate change (\code{col1}) from 1991 to 2016.
+papers published in peer-reviewed literature on biodiversity (\code{colBD})
+and climate change (\code{colCC}) from 1991 to 2016.
 }
 \examples{
 # Not run:
@@ -33,7 +33,7 @@ and climate change (\code{col1}) from 1991 to 2016.
 #     fundingUSCAN$year,
 #     fundingUSCAN$CC_CA + fundingUSCAN$CC_US,
 #     fundingUSCAN$BD_CA + fundingUSCAN$BD_US,
-#     col1 = '#b57653', col2 = '#8bcf35'
+#     colCC = '#b57653', colBD = '#8bcf35'
 #   )
 # grDevices::dev.off()
 

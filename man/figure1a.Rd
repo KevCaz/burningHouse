@@ -4,7 +4,7 @@
 \alias{figure1a}
 \title{Code that creates figure 1a}
 \usage{
-figure1a(time, CC_p, PB_p, col1 = "#594023", col2 = "#9eb844")
+figure1a(time, CC_p, PB_p, colCC = "#594023", colBD = "#9eb844")
 }
 \arguments{
 \item{time}{time values.}
@@ -13,15 +13,15 @@ figure1a(time, CC_p, PB_p, col1 = "#594023", col2 = "#9eb844")
 
 \item{PB_p}{Time-series values of the research papers pertaining to biodiversity.}
 
-\item{col1}{A specification for the first color.}
+\item{colCC}{A specification for the first color associated with climate change data.}
 
-\item{col2}{A specification for the second color.}
+\item{colBD}{A specification for the second color associated with biodiversity data.}
 }
 \value{
 Creates a figure.
 }
 \description{
-Code that creates figure 1a.
+Code that creates figure 1a found in Legagneux et al. 2018.
 }
 \examples{
 # Not run:

@@ -6,5 +6,6 @@
 \alias{burningHouse-package}
 \title{burningHouse}
 \description{
-Code implementation for Legagneux et al. 2017.
+Code implementation for Legagneux et al. (2018) DOI:
+10.3389/fevo.2017.00175.
 }

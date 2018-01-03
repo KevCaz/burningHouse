@@ -2,29 +2,29 @@
 % Please edit documentation in R/figure2.R
 \name{figure2}
 \alias{figure2}
-\title{Code that creates figure 2 Legagneux et al. 2017.}
+\title{Code that creates figure 2 found in Legagneux et al. (2018)}
 \usage{
-figure2(pts, newsPapers, col1 = "#594023", col2 = "#9eb844")
+figure2(pts, newsPapers, colCC = "#594023", colBD = "#9eb844")
 }
 \arguments{
 \item{pts}{A dataframe of events.}
 
 \item{newsPapers}{Monthly publications -- Canada + USA + UK.}
 
-\item{col1}{A specification for the first color.}
+\item{colCC}{A specification for the first color associated with climate change data.}
 
-\item{col2}{A specification for the second color.}
+\item{colBD}{A specification for the second color associated with biodiversity data.}
 }
 \value{
 Creates figure 2.
 }
 \description{
-Code that creates figure 2 from Legagneux et al. 2017, that is
-the number of newspaper articles published per month on biodiversity (
-\code{col2}) or climate change (\code{col1}) issues in US, Canada and UK.
-Detected peaks (plain dots) and associated events are shown. Peaks without
-associated events (empty dots) could not be associated with a priori events.
-Events that embraced both CC and BD issues are written in bold.
+Code that creates figure 2, that is the number of newspaper
+articles published per month on biodiversity (\code{colBD}) or climate
+change (\code{colCC}) issues in US, Canada and UK. Detected peaks (plain
+dots) and associated events are shown. Peaks without associated events (empty
+dots) could not be associated with a priori events. Events that embraced both
+CC and BD issues are written in bold.
 }
 \examples{
 #-- Not run:

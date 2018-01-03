@@ -5,7 +5,7 @@
 This repository includes the data, analyses and how to reproduce figures found
 in the article *Our house is burning: discrepancy in climate change vs
 biodiversity coverage in the media* by Legagneux *et al.* (2018)
-DOI: [10.3389/fevo.2017.00175](https://www.frontiersin.org/articles/10.3389/fevo.2017.00175/abstract).
+[DOI: 10.3389/fevo.2017.00175](https://www.frontiersin.org/articles/10.3389/fevo.2017.00175/abstract).
 
 We have used a standard R package to:
 
@@ -113,7 +113,7 @@ grDevices::png('inst/fig/ms-figure1a.png', height = 5, width = 7, res = 300, uni
     sciPapers$year,
     sciPapers$records_CC,
     sciPapers$records_BD,
-    col1 = "#604a3c", col2 = "#69ab78"
+    colCC = "#604a3c", colBD = "#69ab78"
   )
 grDevices::dev.off()
 ```
@@ -130,7 +130,7 @@ grDevices::png("inst/fig/ms-figure1b.png", height = 5, width = 7, res = 300, uni
     fundingUSCAN$year,
     fundingUSCAN$CC_CA + fundingUSCAN$CC_US,
     fundingUSCAN$BD_CA + fundingUSCAN$BD_US,
-    col1 = "#604a3c", col2 = "#69ab78"
+    colCC = "#604a3c", colBD = "#69ab78"
   )
 grDevices::dev.off()
 ```
@@ -143,7 +143,7 @@ grDevices::dev.off()
 ```r
 data(events); data(newsPapers);
 grDevices::png(file='inst/fig/ms-figure2.png', width = 8, height = 6, res = 300, unit = 'in')
-  figure2(events, newsPapers, col1 = "#604a3c", col2 = "#69ab78")
+  figure2(events, newsPapers, colCC = "#604a3c", colBD = "#69ab78")
 grDevices::dev.off()
 ```
 
