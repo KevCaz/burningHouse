@@ -4,7 +4,8 @@
 
 This repository includes the data, analyses and how to reproduce figures found
 in the article *Our house is burning: discrepancy in climate change vs
-biodiversity coverage in the media* by Legagneux *et al.* DOI: 2BAdded.
+biodiversity coverage in the media* by Legagneux *et al.* (2018)
+DOI: [10.3389/fevo.2017.00175](https://www.frontiersin.org/articles/10.3389/fevo.2017.00175/abstract).
 
 We have used a standard R package to:
 
@@ -151,4 +152,4 @@ grDevices::dev.off()
 
 ## To do
 
-- [ ] add the DOI of the paper and a DOI to the code (Zenodo).
+- [ ] add a DOI to the code (Zenodo).
