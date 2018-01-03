@@ -9,14 +9,14 @@ biodiversity (BD).}
 the month associated with the number of articles recorded in the 6 other
 columns, that is articles pertaining to either climate change (CC)
 and/or biodiversity (BD) found in the most popular journals in the three
-countries mentioned above (CA, US and UK).}
+countries abovementioned.}
 \usage{
 data(newsPapers)
 }
 \description{
 Time series of monthly record of newspapers articles dealing with climate
 change (CC) and/or biodiversity (BD). Articles recorded were extracted from
-newspapers we assumed to be the most popular in Canada (CA), United states
+newspapers we assumed to be the most popular in Canada (CA), United States
 of America (US) and the United Kingdom (UK) (see \code{titles} dataset for
 more details).
 }

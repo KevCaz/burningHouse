@@ -24,14 +24,14 @@ detectPeaks <- function(newsPapers) {
     out <- list()
     
     # Climate change peaks
-    tmpCC <- cardidates::peakwindow(seq(1, nrow(newsPapers), 1), apply(newsPapers[,
+    tmpCC <- cardidates::peakwindow(seq(1, nrow(newsPapers), 1), apply(newsPapers[, 
         grepl(names(newsPapers), pattern = "CC")], 1, sum), minpeak = 0.1, mincut = 0.6)$peaks$index
     out$peakCC <- as.character(newsPapers[tmpCC, 1])
-
+    
     # Biodiversity peaks
-    tmpBD <- cardidates::peakwindow(seq(1, nrow(newsPapers), 1), apply(newsPapers[,
+    tmpBD <- cardidates::peakwindow(seq(1, nrow(newsPapers), 1), apply(newsPapers[, 
         grepl(names(newsPapers), pattern = "BD")], 1, sum), minpeak = 0.1, mincut = 0.6)$peaks$index
     out$peakBD <- as.character(newsPapers[tmpBD, 1])
-
+    
     out
 }

@@ -4,8 +4,8 @@
 \name{newsNames}
 \alias{newsNames}
 \title{Newspapers' names.}
-\format{A data frame of 12 rows (1 per journal) and 2 columns: \code{country}
-and \code{name}.}
+\format{A data frame of 12 rows (1 row per journal) and 2 columns:
+\code{country} and \code{name}.}
 \usage{
 data(newsNames)
 }

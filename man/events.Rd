@@ -9,7 +9,7 @@
 theme of the event either climate change (CC) or biodiversity (BD),
 \code{event} record the names of events, \code{place} the city where the
 event took place and \code{date} the date when the event took place. Finally
-the 10 other columns remaining are used to locate events and their labels on figure 2.}
+the 10 remaining columns are used to locate events and their labels on figure 2.}
 \usage{
 data(events)
 }

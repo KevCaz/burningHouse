@@ -9,9 +9,9 @@ figure1b(time, CC_f, PB_f, colCC = "#594023", colBD = "#9eb844")
 \arguments{
 \item{time}{time values.}
 
-\item{CC_f}{Time-series values of the research funding allocated to climate change.}
+\item{CC_f}{Time series values of the research funding allocated to climate change.}
 
-\item{PB_f}{Time-series values of the research funding allocated to biodiversity.}
+\item{PB_f}{Time series values of the research funding allocated to biodiversity.}
 
 \item{colCC}{A specification for the first color associated with climate change data.}
 

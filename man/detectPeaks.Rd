@@ -2,19 +2,22 @@
 % Please edit documentation in R/detectPeaks.R
 \name{detectPeaks}
 \alias{detectPeaks}
-\title{Detect peaks in the newspapers articles time series.}
+\title{Detect peaks}
 \usage{
 detectPeaks(newsPapers)
 }
 \arguments{
 \item{newsPapers}{A data frame that includes the number of newpapers articles
-for climate change and}
+for climate change and biodiversity.}
 }
 \value{
-A list of two elements: significant peaks fot the two
+A list of two elements: significant peaks for climate change (\code{peakCC})
+and biodiversity (\code{peakBD}).
 }
 \description{
-Detect peaks in the newspapers articles time series.
+This function detects peaks from a time series. Here we specify
+the function so it deals at once with both climate change and biodiversity
+articles time series.
 }
 \examples{
 data(newsPapers)
