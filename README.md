@@ -63,7 +63,7 @@ install_github('KevCaz/burningHouse')
 We collected data, stored them as data frames and listed them below:
 
 - **events**: international events reported on figure 2 (see below);  
-- **fundingsUSCA**: funding time series (yearly frequency);  
+- **fundingsUSCA**: time series of research fundings (yearly frequency);  
 - **newsPaper**: number of articles in the newspapers' time series (yearly frequency);
 - **newsNames**: names of the newspapers included in the study;    
 - **sciPaper**: time series of scientific papers (yearly frequency);    
