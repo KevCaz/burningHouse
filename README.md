@@ -25,7 +25,22 @@ are not general).
 
 ## Abstract of the article
 
-> Scientists, policy makers and journalists are three key, interconnected players involved in prioritizing and implementing solutions to mitigate the consequences of anthropogenic pressures on the environment. We extensively scrutinized the scientific literature, research funding and press articles from the USA, Canada and United Kingdom addressing climate change and biodiversity issues between 1991 and 2016. We found that media coverage of climate change was up to eight times greater compared to biodiversity. This discrepancy could not be explained by different scientific output between the two issues. Moreover, climate change media coverage was often related to specific events whereas no such indication of a connection was found in the case of biodiversity. An international communication strategy is deeply required to raise public awareness on biodiversity issues, which in turn could provide rewards both in terms of increased research funding and discoveries.
+> Scientists, policy makers, and journalists are three key, interconnected players involved in
+prioritizing and implementing solutions to mitigate the consequences of anthropogenic
+pressures on the environment. The way in which information is framed and expertise
+is communicated by the media is crucial for political decisions and for the integrated
+management of environmental issues. Here we present a comparative study of scientific
+literature and press articles addressing climate change and biodiversity. We extensively
+scrutinized the scientific literature, research funding, and press articles from the USA,
+Canada, and United Kingdom addressing climate change and biodiversity issues
+between 1991 and 2016. We found that media coverage of climate change was up
+to eight times higher compared to biodiversity. This discrepancy could not be explained
+by different scientific output between the two issues. Moreover, climate change media
+coverage was often related to specific events whereas no such indication of a connection
+was found in the case of biodiversity. An international communication strategy is urgently
+required to raise public awareness on biodiversity issues. We discussed several initiatives
+that scientists could undertake to better communicate major discoveries to the public and
+policy makers.
 
 
 

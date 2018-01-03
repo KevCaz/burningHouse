@@ -1,11 +1,11 @@
 Package: burningHouse
 Type: Package
 Title: Data, analyses and figures found in Legagneux et al. (2018) DOI: 10.3389/fevo.2017.00175.
-Version: 0.0-3
+Version: 1.0-0
 Date: 2018-01-03
 Author: Kevin Cazelles [aut, cre], Nicolas Casajus [aut], Pierre Legagneux [aut], Steve Vissault [aut].
 Maintainer: Kevin Cazelles <kevin.cazelles@gmail.com>
-Description: This packages aims at making the study by Legagneux and colleagues "Our house is burning: discrepancy in climate change vs biodiversity coverage in the media" fully reproducible.
+Description: This package aims at making the study by Legagneux and colleagues entitled "Our house is burning: discrepancy in climate change vs biodiversity coverage in the media" fully reproducible.
 Depends:
     R (>= 3.0.0)
 Imports:
