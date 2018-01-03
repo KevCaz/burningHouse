@@ -63,11 +63,11 @@ install_github('KevCaz/burningHouse')
 We collected data, stored them as data frames and listed them below:
 
 - **events**: international events reported on figure 2 (see below);  
-- **fundingsUSCA**: fundings time series (yearly frequency);  
+- **fundingsUSCA**: funding time series (yearly frequency);  
 - **newsPaper**: number of articles in the newspapers' time series (yearly frequency);
 - **newsNames**: names of the newspapers included in the study;    
-- **sciPaper**: time series of scientific articles (yearly frequency);    
-- **sciNames**: number of scientific paper we retrieved per journal title.
+- **sciPaper**: time series of scientific papers (yearly frequency);    
+- **sciNames**: number of scientific papers we retrieved per journal title.
 
 To manipulate these data frames, the user should first call the `data()`
 function like so:
