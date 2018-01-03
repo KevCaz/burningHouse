@@ -21,6 +21,8 @@ are not general).
 
 [![Build Status](https://travis-ci.org/KevCaz/burningHouse.svg?branch=master)](https://travis-ci.org/KevCaz/burningHouse)
 [![Build status](https://ci.appveyor.com/api/projects/status/qh4ntjow6tcho9oh/branch/master?svg=true)](https://ci.appveyor.com/project/KevCaz/burninghouse/branch/master)
+[![DOI](https://zenodo.org/badge/107296166.svg)](https://zenodo.org/badge/latestdoi/107296166)
+
 
 
 ## Abstract of the article
