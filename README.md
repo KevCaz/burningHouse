@@ -8,12 +8,12 @@ biodiversity coverage in the media* by Legagneux *et al.* DOI: 2BAdded.
 
 We have used a standard R package to:
 
-  1- efficiently assess the quality of our code (here we simply use `R CMD check`);
+  1- efficiently assess the quality of our code (here we simply used `R CMD check`);
 
-  2- readily share our code (see installation section).
+  2- readily share our code (see installation section below).
 
 We however acknowledge that despite the form of a standard R package, the code
-presented is more a organized script that a package (*i.e.* functions included
+presented is more a organized script than a package (*i.e.* functions included
 are not general).
 
 ## Current status
@@ -22,7 +22,7 @@ are not general).
 [![Build status](https://ci.appveyor.com/api/projects/status/qh4ntjow6tcho9oh/branch/master?svg=true)](https://ci.appveyor.com/project/KevCaz/burninghouse/branch/master)
 
 
-## Abstract of the paper
+## Abstract of the article
 
 > Scientists, policy makers and journalists are three key, interconnected players involved in prioritizing and implementing solutions to mitigate the consequences of anthropogenic pressures on the environment. We extensively scrutinized the scientific literature, research funding and press articles from the USA, Canada and United Kingdom addressing climate change and biodiversity issues between 1991 and 2016. We found that media coverage of climate change was up to eight times greater compared to biodiversity. This discrepancy could not be explained by different scientific output between the two issues. Moreover, climate change media coverage was often related to specific events whereas no such indication of a connection was found in the case of biodiversity. An international communication strategy is deeply required to raise public awareness on biodiversity issues, which in turn could provide rewards both in terms of increased research funding and discoveries.
 
@@ -31,7 +31,7 @@ are not general).
 
 ## Installation
 
-The easiest way to install this package is to use the [devtools](https://cran.r-project.org/web/packages/devtools/index.html)
+The easiest way is to use the [devtools](https://cran.r-project.org/web/packages/devtools/index.html)
 R package. Once installed, use the following commands in your favorite R console:
 
 ```r
@@ -44,28 +44,52 @@ install_github('KevCaz/burningHouse')
 
 ## Data
 
-We collect data and store them as data frame. Below is the list of data frames
-available:
+We collected data, stored them as data frames and listed them below:
 
 - **events**: international events reported on figure 2 (see below);  
 - **fundingsUSCA**: fundings time series (yearly frequency);  
-- **newsPaper**: number of articles in newspapers time series (yearly frequency);
-- **newsNames**: names of the news papers included in the study;    
-- **sciPaper**: number of articles in newspapers time series (yearly frequency);    
+- **newsPaper**: number of articles in the newspapers' time series (yearly frequency);
+- **newsNames**: names of the newspapers included in the study;    
+- **sciPaper**: time series of scientific articles (yearly frequency);    
 - **sciNames**: number of scientific paper we retrieved per journal title.
 
-To manipulate these data frames, call the `data()` function, for instance:
+To manipulate these data frames, the user should first call the `data()`
+function like so:
 
 ```r
-data(titles)
+data(newsNames)
 ```
 
-For each dataset, details are provided in the documentation associated you can
-access with `?` or `help()`:
+The data frame is then usable, for instance:
+
+```r
+knitr::kable(newsNames)
+```
+
+yields:
+
+|country |name                    |
+|:-------|:-----------------------|
+|Canada  |The Globe and Mail      |
+|Canada  |National Post           |
+|Canada  |The Toronto Star        |
+|Canada  |Winnipeg Free Press     |
+|USA     |The New York Times      |
+|USA     |USA Today               |
+|USA     |The Wall Street Journal |
+|USA     |The Washington Post     |
+|UK      |Financial Times         |
+|UK      |The Guardian            |
+|UK      |The Independent         |
+|UK      |The Times               |
+
+
+Also for each dataset, details are provided in the documentation associated. To
+access this documentation the user can either use `?` or `help()`:
 
 
 ```r
-?titles
+?newsNames
 ```
 
 
@@ -74,8 +98,9 @@ access with `?` or `help()`:
 ## Figures
 
 Creating the figures below required to 1- collect data and 2- do a peaks
-detection analysis. Data are available as data frames and the peaks detection
-analysis is presented as a example of the `detectPeaks()` function we used.
+detection analysis. Data are available as data frames (listed above) and the
+peaks detection analysis is presented as a example of the `detectPeaks()`
+function we used.
 
 
 ### Figure 1a
@@ -86,7 +111,8 @@ grDevices::png('inst/fig/ms-figure1a.png', height = 5, width = 7, res = 300, uni
   figure1a(
     sciPapers$year,
     sciPapers$records_CC,
-    sciPapers$records_BD
+    sciPapers$records_BD,
+    col1 = "#604a3c", col2 = "#69ab78"
   )
 grDevices::dev.off()
 ```
@@ -125,6 +151,4 @@ grDevices::dev.off()
 
 ## To do
 
-- [ ] review doc of the package.
-- [ ] add the DOI of the paper.
-- [ ] use Zenodo for the repo.
+- [ ] add the DOI of the paper and a DOI to the code (Zenodo).
