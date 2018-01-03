@@ -165,8 +165,3 @@ grDevices::dev.off()
 ```
 
 ![](inst/fig/ms-figure2.png)
-
-
-## To do
-
-- [ ] add a DOI to the code (Zenodo).
