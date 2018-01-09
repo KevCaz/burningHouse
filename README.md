@@ -120,7 +120,6 @@ detection analysis. Data are available as data frames (listed above) and the
 peaks detection analysis is presented as a example of the `detectPeaks()`
 function we used.
 
-
 ### Figure 1a
 
 ```r
@@ -155,6 +154,8 @@ grDevices::dev.off()
 ![](inst/fig/ms-figure1b.png)
 
 
+
+
 ### Figure 2
 
 ```r
@@ -165,3 +166,11 @@ grDevices::dev.off()
 ```
 
 ![](inst/fig/ms-figure2.png)
+
+
+### Additional comments
+
+A last note to add the two colors used in the original paper:
+
+- "#594023"   
+- "#9eb844"
