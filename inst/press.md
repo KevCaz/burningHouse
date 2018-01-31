@@ -1,4 +1,1 @@
-
-Est-ce que les médias portent autant d'attention aux changements climatiques qu’à la perte de biodiversité ? C'est la question à laquelle nous avons essayé d’apporter des éléments de réponses dans notre article *title?*. Pour comparer les deux traitements médiatiques, nous avons ciblés les journaux anglophones les plus populaires en amérique du Nord et au Royaume-Uni puis estimé le nombre d’articles associés aux deux sujets en utilisant des mots clefs clairement attachés à l’un ou l’autre. En analysant la série temporelle obtenue,  nous montrons que les médias papiers traditionnels sont beaucoup plus réactifs aux enjeux liés aux changements climatiques qu’à ceux liés à la perte de la biodiversité et ce malgré une différence faible en terme de production scientifique. Nous pensons qu’il est urgent
-que le traitement des enjeux de perte de biodiversité soient davantage reliés dans les médias,
-d’autant plus que ces derniers jouent un rôle essentiel dans la mise en place de politiques nouvelles pour relever les défis poser par l’érosion de la biodiversité.
+tobe added.
