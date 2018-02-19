@@ -65,11 +65,11 @@ install_github('KevCaz/burningHouse')
 
 We collected data, stored them as data frames and listed them below:
 
-- **events**: international events reported on figure 2 (see below);  
-- **fundingsUSCA**: time series of research fundings (yearly frequency);  
+- **events**: international events reported on figure 2 (see below);
+- **fundingsUSCA**: time series of research fundings (yearly frequency);
 - **newsPaper**: number of articles in the newspapers' time series (yearly frequency);
-- **newsNames**: names of the newspapers included in the study;    
-- **sciPaper**: time series of scientific papers (yearly frequency);    
+- **newsNames**: names of the newspapers included in the study;
+- **sciPaper**: time series of scientific papers (yearly frequency);
 - **sciNames**: number of scientific papers we retrieved per journal title.
 
 To manipulate these data frames, the user should first call the `data()`
@@ -171,7 +171,12 @@ grDevices::dev.off()
 
 ### Additional comments
 
-A last note to add the two colors used in the original paper:
+1. Colors used in the original paper:
 
-- "#594023"   
-- "#9eb844"
+  - "#594023"
+  - "#9eb844"
+
+2. Press / blog
+
+  - http://www.cnrs.fr/inee/communication/breves/b337.html
+  - https://qcbs.ca/research/qcbs-research-showcase/
