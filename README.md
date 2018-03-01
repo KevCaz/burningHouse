@@ -176,8 +176,12 @@ grDevices::dev.off()
   - "#594023"
   - "#9eb844"
 
-2. Press / blog ✏️
+2. Media coverage
 
-  - http://www.cnrs.fr/inee/communication/breves/b337.html
-  - https://qcbs.ca/research/qcbs-research-showcase/
-  - http://www.anthropocenemagazine.org/2018/02/biodiversity-ignored-by-press/
+  - :pencil: http://www.cnrs.fr/inee/communication/breves/b337.html (fr)
+  - :pencil: https://www.uqar.ca/nouvelles/uqar-info/2462-crise-de-la-biodiversite-un-enjeu-qui-passe-sous-le-radar-des-medias (fr)
+  - :pencil: https://qcbs.ca/research/qcbs-research-showcase/ (eng + fr)
+  - :pencil: http://www.anthropocenemagazine.org/2018/02/biodiversity-ignored-by-press/ (eng)
+  - :pencil: http://www.greenreport.it/news/aree-protette-e-biodiversita/la-crisi-della-biodiversita-non-interessa-media/ (it)
+  - :pencil: https://agro.biodiver.se/2018/02/brainfood-msb-value-wild-rice-genomes-media-coverage/ (eng)
+  - :radio: http://www.rfi.fr/emission/20180218-2-chaos-climatique-financier-jouzel-larrouturou (fr - Pierre Legagneux starts speaking at 22:00)
