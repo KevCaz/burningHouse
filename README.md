@@ -180,3 +180,4 @@ grDevices::dev.off()
 
   - http://www.cnrs.fr/inee/communication/breves/b337.html
   - https://qcbs.ca/research/qcbs-research-showcase/
+  - http://www.anthropocenemagazine.org/2018/02/biodiversity-ignored-by-press/
