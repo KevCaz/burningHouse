@@ -176,7 +176,7 @@ grDevices::dev.off()
   - "#594023"
   - "#9eb844"
 
-2. Press / blog
+2. Press / blog ✏️
 
   - http://www.cnrs.fr/inee/communication/breves/b337.html
   - https://qcbs.ca/research/qcbs-research-showcase/
