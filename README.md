@@ -180,6 +180,7 @@ grDevices::dev.off()
 
   - :pencil: http://www.cnrs.fr/inee/communication/breves/b337.html (fr)
   - :pencil: https://www.uqar.ca/nouvelles/uqar-info/2462-crise-de-la-biodiversite-un-enjeu-qui-passe-sous-le-radar-des-medias (fr)
+  - :pencil: http://www.lapresse.ca/environnement/climat/201803/06/01-5156225-la-biodiversite-dans-lombre-des-changements-climatiques.php (fr)
   - :pencil: https://qcbs.ca/research/qcbs-research-showcase/ (eng + fr)
   - :pencil: http://www.anthropocenemagazine.org/2018/02/biodiversity-ignored-by-press/ (eng)
   - :pencil: http://www.greenreport.it/news/aree-protette-e-biodiversita/la-crisi-della-biodiversita-non-interessa-media/ (it)
