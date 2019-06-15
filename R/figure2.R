@@ -165,7 +165,7 @@ figure2 <- function(pts, newsPapers, colCC = "#594023", colBD = "#9eb844") {
 
     axis(1, at = seq(0, xrng * (floor(xmax/xrng) + 1), xrng), labels = paste0(seq(0,
         xrng * (floor(xmax/xrng) + 1), xrng), "K"))
-    mtext(1, text = paste("Total number of media articles", sep = ""), line = 1.75,
+    mtext(1, text = paste("Nombre d'articles de presse", sep = ""), line = 1.75,
         cex = 1.34)
 
     invisible(NULL)

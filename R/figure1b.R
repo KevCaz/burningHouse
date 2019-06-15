@@ -18,17 +18,17 @@
 #' @importFrom graphics axis polygon par text lines points mtext barplot
 #'
 #' @examples
-#' # Not run:
+#' \dontrun{
 #' # data(fundingUSCAN)
-#' # grDevices::png('inst/fig/ms-figure1b.png', height = 5, width = 7, res = 300, unit = 'in')
-#' #   figure1b(
-#' #     fundingUSCAN$year,
-#' #     fundingUSCAN$CC_CA + fundingUSCAN$CC_US,
-#' #     fundingUSCAN$BD_CA + fundingUSCAN$BD_US,
-#' #     colCC = '#b57653', colBD = '#8bcf35'
-#' #   )
-#' # grDevices::dev.off()
-#'
+#' grDevices::png('inst/fig/ms-figure1b.png', height = 5, width = 7, res = 300, unit = 'in')
+#' figure1b(
+#'   fundingUSCAN$year,
+#'   fundingUSCAN$CC_CA + fundingUSCAN$CC_US,
+#'   fundingUSCAN$BD_CA + fundingUSCAN$BD_US,
+#'   colCC = '#b57653', colBD = '#8bcf35'
+#' )
+#' grDevices::dev.off()
+#' }
 #' @export
 
 
@@ -66,11 +66,11 @@ figure1b <- function(time, CC_f, PB_f, colCC = "#594023", colBD = "#9eb844") {
     axis(1, at = c(0, 35), labels = F, lwd = cex_mt, lwd.ticks = 0)
     axis(1, at = seq(0, 30, 10), labels = paste0(seq(0, 30, 10), "G"), lwd = cex_mt)
 
-    barplot(c(sum(CC_f), sum(PB_f))/1e+09, col = c(colCC, colBD), width = 0.75, space = 0.4,
+    barplot(c(sum(CC_f), sum(PB_f))/1e+09, col = c(colCC, colBD), width = 0.76, space = 0.38,
         border = NA, horiz = TRUE, add = TRUE, axes = FALSE)
-    mtext(1, text = "Total funding (USD)", line = 2.4, cex = 1.8)
+    mtext(1, text = "Financement total (US$)", line = 2.4, cex = 1.8)
     text(c(0, 0), c(0.62, 1.62), labels = c("CC", "BD"), pos = 4, col = "grey95",
-        cex = cex_mt - 0.1)
+        cex = cex_mt)
 
     ##-- returns NULL
     invisible(NULL)

@@ -1,0 +1,8 @@
+events$event[1] <- "Sommet de la Terre \n Rio de Janeiro"
+events$event[2] <- "Sommet de la \nTerre +5 (NYC)"
+events$event[3] <- "Signature du protocole de Kyoto"
+events$event[7] <- "Sommet de la Terre - Johannesbourg"
+events$event[8] <- "Vague de chaleur en Europe"
+events$event[11] <- "Ouragan999Sandy"
+events$event[14] <- "Jour de la Terre 2000"
+events$event[16] <- "Sommet de la Terre - Rio+20"

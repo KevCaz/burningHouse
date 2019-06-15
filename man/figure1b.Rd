@@ -26,17 +26,17 @@ papers published in peer-reviewed literature on biodiversity (\code{colBD})
 and climate change (\code{colCC}) from 1991 to 2016.
 }
 \examples{
-# Not run:
+\dontrun{
 # data(fundingUSCAN)
-# grDevices::png('inst/fig/ms-figure1b.png', height = 5, width = 7, res = 300, unit = 'in')
-#   figure1b(
-#     fundingUSCAN$year,
-#     fundingUSCAN$CC_CA + fundingUSCAN$CC_US,
-#     fundingUSCAN$BD_CA + fundingUSCAN$BD_US,
-#     colCC = '#b57653', colBD = '#8bcf35'
-#   )
-# grDevices::dev.off()
-
+grDevices::png('inst/fig/ms-figure1b.png', height = 5, width = 7, res = 300, unit = 'in')
+figure1b(
+  fundingUSCAN$year,
+  fundingUSCAN$CC_CA + fundingUSCAN$CC_US,
+  fundingUSCAN$BD_CA + fundingUSCAN$BD_US,
+  colCC = '#b57653', colBD = '#8bcf35'
+)
+grDevices::dev.off()
+}
 }
 \author{
 Kevin Cazelles & Nicolas Casajus

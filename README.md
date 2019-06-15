@@ -130,9 +130,9 @@ png('inst/fig/ms-figure1a.png', height = 5, width = 7, res = 300, unit = 'in')
     sciPapers$year,
     sciPapers$records_CC,
     sciPapers$records_BD,
-    colCC = "#604a3c", colBD = "#69ab78"
+    colCC = "#7d6025", colBD = "#5ba164"
   )
-  dev.off()
+dev.off()
 ```
 
 ![](inst/fig/ms-figure1a.png)
@@ -141,28 +141,36 @@ png('inst/fig/ms-figure1a.png', height = 5, width = 7, res = 300, unit = 'in')
 ### Figure 1b
 
 ```r
+load_all()
 data(fundingUSCAN)
 grDevices::png("inst/fig/ms-figure1b.png", height = 5, width = 7, res = 300, unit = "in")
   figure1b(
     fundingUSCAN$year,
     fundingUSCAN$CC_CA + fundingUSCAN$CC_US,
     fundingUSCAN$BD_CA + fundingUSCAN$BD_US,
-    colCC = "#604a3c", colBD = "#69ab78"
+    colCC = "#7d6025", colBD = "#5ba164"
   )
 grDevices::dev.off()
 ```
 
 ![](inst/fig/ms-figure1b.png)
 
+I have used [imagemagick](https://imagemagick.org/) to combine the two images above :
+
+```
+convert +append inst/fig/ms-figure1a.png inst/fig/ms-figure1b.png inst/fig/ms-figure1.png
+```
 
 
 
 ### Figure 2
 
 ```r
+load_all()
 data(events); data(newsPapers);
+source("inst/name_fr.R")
 grDevices::png(file='inst/fig/ms-figure2.png', width = 8, height = 6, res = 300, unit = 'in')
-  figure2(events, newsPapers, colCC = "#604a3c", colBD = "#69ab78")
+  figure2(events, newsPapers, colCC = "#7d6025", colBD = "#5ba164")
 grDevices::dev.off()
 ```
 
