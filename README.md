@@ -125,14 +125,14 @@ function we used.
 
 ```r
 data(sciPapers)
-grDevices::png('inst/fig/ms-figure1a.png', height = 5, width = 7, res = 300, unit = 'in')
+png('inst/fig/ms-figure1a.png', height = 5, width = 7, res = 300, unit = 'in')
   figure1a(
     sciPapers$year,
     sciPapers$records_CC,
     sciPapers$records_BD,
     colCC = "#604a3c", colBD = "#69ab78"
   )
-grDevices::dev.off()
+  dev.off()
 ```
 
 ![](inst/fig/ms-figure1a.png)
@@ -186,4 +186,5 @@ grDevices::dev.off()
   - :pencil: http://www.greenreport.it/news/aree-protette-e-biodiversita/la-crisi-della-biodiversita-non-interessa-media/ (it)
   - :pencil: https://agro.biodiver.se/2018/02/brainfood-msb-value-wild-rice-genomes-media-coverage/ (eng)
   - :pencil: https://www.20minutes.fr/planete/2234443-20180308-pourquoi-parle-bien-plus-changement-climatique-erosion-biodiversite (fr)
+  - :pencil: https://www.theguardian.com/news/2018/mar/12/what-is-biodiversity-and-why-does-it-matter-to-us?CMP=share_btn_tw (eng mentioned)
   - :radio: http://www.rfi.fr/emission/20180218-2-chaos-climatique-financier-jouzel-larrouturou (fr - Pierre Legagneux starts speaking at 22:00)

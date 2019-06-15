@@ -7,3 +7,5 @@
 ^README\.md
 LICENSE
 record_updates.txt
+^inst/media/
+^inst/other/

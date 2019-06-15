@@ -27,12 +27,11 @@ dots) could not be associated with a priori events. Events that embraced both
 CC and BD issues are written in bold.
 }
 \examples{
-#-- Not run:
-# data(events); data(newsPapers);
-# grDevices::png(file='inst/fig/ms-figure2.png', width = 8, height = 6, res = 300, unit = 'in')
-#  figure2(events, newsPapers)
-# grDevices::dev.off()
-
+\dontrun{
+data(events); data(newsPapers);
+grDevices::png(file='inst/fig/ms-figure2.png', width = 8, height = 6, res = 300, unit = 'in')
+ figure2(events, newsPapers)
+}
 }
 \author{
 Nicolas Casajus & Kevin Cazelles

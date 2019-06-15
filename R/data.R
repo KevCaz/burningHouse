@@ -75,11 +75,12 @@
 
 
 #' Worldwide scientific papers published in peer-reviewed literature on
-#' biodiversity and climate change.
+#' biodiversity and climate change between 1991 and 2018.
 #'
-#' Worldwide scientific papers published in peer-reviewed literature dealing with
-#' biodiversity (BD) or climate change (CC) retrieved from Web of Science on
-#' March 3rd, 2017.
+#' Worldwide scientific papers published in peer-reviewed literature dealing
+#' with biodiversity (BD) or climate change (CC) retrieved from Web of Science
+#' on March 3rd, 2017. Key words used for queries were 'biodiversity',
+#' 'ecosystem services', 'endangered species' and `IPBES` for BD and `climate #' change`, `global warming` and `IPCC`.
 #'
 #' @docType data
 #' @keywords datasets

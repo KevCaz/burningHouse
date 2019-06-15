@@ -4,16 +4,17 @@
 \name{sciPapers}
 \alias{sciPapers}
 \title{Worldwide scientific papers published in peer-reviewed literature on
-biodiversity and climate change.}
+biodiversity and climate change between 1991 and 2018.}
 \format{A data frame of 26 rows and 3 columns: \code{year}, \code{records_BD}
 and \code{records_CC}.}
 \usage{
 data(sciPapers)
 }
 \description{
-Worldwide scientific papers published in peer-reviewed literature dealing with
-biodiversity (BD) or climate change (CC) retrieved from Web of Science on
-March 3rd, 2017.
+Worldwide scientific papers published in peer-reviewed literature dealing
+with biodiversity (BD) or climate change (CC) retrieved from Web of Science
+on March 3rd, 2017. Key words used for queries were 'biodiversity',
+'ecosystem services', 'endangered species' and `IPBES` for BD and `climate #' change`, `global warming` and `IPCC`.
 }
 \author{
 Steve Vissault and Nicolas Casajus

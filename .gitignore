@@ -1,6 +1,8 @@
 # kc
 inst/*.pdf
 inst/tmp.R
+inst/media/
+inst/other/
 inst/*.rda
 Makefile
 inst/csvFiles
