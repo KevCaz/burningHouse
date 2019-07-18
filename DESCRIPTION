@@ -18,6 +18,7 @@ Suggests:
     rmarkdown,
     testthat
 License: GPL-2
+Encoding: UTF-8
 URL: https://github.com/KevCaz/burningHouse
 BugReports: https://github.com/KevCaz/burningHouse/issues
 VignetteBuilder: knitr

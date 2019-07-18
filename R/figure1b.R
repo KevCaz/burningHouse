@@ -69,8 +69,8 @@ figure1b <- function(time, CC_f, PB_f, colCC = "#594023", colBD = "#9eb844") {
     barplot(c(sum(CC_f), sum(PB_f))/1e+09, col = c(colCC, colBD), width = 0.76, space = 0.38,
         border = NA, horiz = TRUE, add = TRUE, axes = FALSE)
     mtext(1, text = "Financement total (US$)", line = 2.4, cex = 1.8)
-    text(c(0, 0), c(0.62, 1.62), labels = c("CC", "BD"), pos = 4, col = "grey95",
-        cex = cex_mt)
+    text(c(-.7, -.7), c(0.62, 1.62), labels = c("Changements climatiques", "Biodiversité"), pos = 4, col = "grey95",
+        cex = cex_mt -.2)
 
     ##-- returns NULL
     invisible(NULL)

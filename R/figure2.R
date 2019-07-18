@@ -160,8 +160,8 @@ figure2 <- function(pts, newsPapers, colCC = "#594023", colBD = "#9eb844") {
     rect(xleft = 0, xright = sum(na.omit(newsPapers$BD))/1000, ybottom = 1.6, ytop = 2.4,
         col = colBD, border = NA)
 
-    text(x = c(-0.5, -0.5), y = c(0.95, 1.95), labels = c("CC", "BD"), pos = 4, col = c("grey95",
-        "grey95"), cex = 1.15)
+    text(x = c(-3, -3), y = c(0.95, 1.95), labels = c("Changements climatiques", "Biodiversité"), pos = 4, col = c("grey10",
+        "grey10"), cex = 1.25)
 
     axis(1, at = seq(0, xrng * (floor(xmax/xrng) + 1), xrng), labels = paste0(seq(0,
         xrng * (floor(xmax/xrng) + 1), xrng), "K"))
