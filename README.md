@@ -141,7 +141,6 @@ dev.off()
 ### Figure 1b
 
 ```r
-load_all()
 data(fundingUSCAN)
 grDevices::png("inst/fig/ms-figure1b.png", height = 5, width = 7, res = 300, unit = "in")
   figure1b(
