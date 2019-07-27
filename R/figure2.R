@@ -150,7 +150,7 @@ figure2 <- function(pts, newsPapers, colCC = "#594023", colBD = "#9eb844") {
 
 
     # add inset
-    par(new = TRUE, fig = c(0, 0.5, 0.7, 1), mar = c(3, 1, 1.5, 2), mgp = c(2.5,
+    par(new = TRUE, fig = c(0, 0.58, 0.7, 1), mar = c(3, 1, 1.5, 2), mgp = c(2.5,
         0.5, 0))
     graphics::plot(x = c(0, 0), y = c(0.5, 2.5), xlim = c(0, xrng * (floor(xmax/xrng) +
         1)), type = "n", bty = "n", axes = FALSE, ann = FALSE)
@@ -160,8 +160,8 @@ figure2 <- function(pts, newsPapers, colCC = "#594023", colBD = "#9eb844") {
     rect(xleft = 0, xright = sum(na.omit(newsPapers$BD))/1000, ybottom = 1.6, ytop = 2.4,
         col = colBD, border = NA)
 
-    text(x = c(-3, -3), y = c(0.95, 1.95), labels = c("Changements climatiques", "Biodiversit\u00e9"), pos = 4, col = c("grey10",
-        "grey10"), cex = 1.25)
+    text(x = c(-3, -3), y = c(0.95, 1.95), labels = c("Changements climatiques", "Biodiversit\u00e9"), pos = 4, col = c("grey95",
+        "grey95"), cex = 1.05)
 
     axis(1, at = seq(0, xrng * (floor(xmax/xrng) + 1), xrng), labels = paste0(seq(0,
         xrng * (floor(xmax/xrng) + 1), xrng), "K"))
